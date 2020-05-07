@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Responsive Portafolio Landing Page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+<section class="banner" id="sec">
+<header>
+<a href="#" class="logo">GuppyDigital.com</a>
+<div id="toggle" onclick="toggle()"></div>
+</header>
+
+
+
+<div class="content">
+	<h2>Creamos Soluciones <br>Digitales</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="navigation">
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Herramientas</a></li>
+<li><a href="#">Procesos</a></li>
+<li><a href="#">Nosotros</a></li>
+<li><a href="#">Contáctenos</a></li>
+</ul>
+</div>
+<script type="text/javascript">
+function toggle(){
+	var sec = document.getElementById('sec');
+	var nav = document.getElementById('navigation');
+	sec.classList.toggle('active');
+	nav.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
