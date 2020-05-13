@@ -3,55 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
-<title>Responsive Portafolio Landing Page</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>GuppyDigital.com</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-
-
-
-
-
-
-
 <section class="banner" id="sec">
 <header>
-<a href="#" class="logo">GuppyDigital.com</a>
+<a href="https://guppydigital.com" class="logo">GuppyDigital.com</a>
 <div id="toggle" onclick="toggle()"></div>
 </header>
-
-
-
 <div class="content">
-	<h2>Creamos Soluciones <br>Digitales</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+	<h2>Estamos creando<br><span>grandes cosas.</span></h2>
+	<p>GuppyDigital.com, una agencia de marketing, capaz de innovar la imagen corporativa de grandes empresas y potenciales negocios. <br>Estamos trabajando en nuestro sitio web para brindarte lo mejor que encontrarás en el mercado. Vuelva pronto...</p>
+	
 </div>
 
-
-
-
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div id="navigation">
 <ul>
-<li><a href="#">Inicio</a></li>
-<li><a href="#">Herramientas</a></li>
-<li><a href="#">Procesos</a></li>
-<li><a href="#">Nosotros</a></li>
-<li><a href="#">Contáctenos</a></li>
+<li><a href="https://guppydigital.com">Inicio</a></li>
 </ul>
 </div>
 <script type="text/javascript">
@@ -62,6 +32,18 @@ function toggle(){
 	nav.classList.toggle('active');
 }
 </script>
-
+<script language="Javascript">
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
 </body>
 </html>
