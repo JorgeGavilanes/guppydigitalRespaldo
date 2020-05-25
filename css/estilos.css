@@ -1,41 +1,32 @@
-
-* {
+*{
     box-sizing: border-box;
     margin: 0; padding: 0;
 }
-
 body { 
     font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
-
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 0;
 }
-
 .texto-naranja {
     font-weight: 300;
     color: orange;
 }
-
 .texto-blanco {
     font-weight: 700;
     color: #fff;
 }
-
 .texto-negro {
 	color: #000;
 }
-
 #fp-nav ul li a span {
     background: orange;
 }
-
 #fp-nav ul li .fp-tooltip {
     color: orange;
 }
-
 .nav {
     position: fixed;
     display: flex;
@@ -46,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 10px 20px;
 }
-
 .nav li,
 .nav a {
     display: inline-block;
@@ -58,38 +48,27 @@ h1, h2, h3, h4, h5, h6 {
     color: #c2c2c2;
     transition: .5s ease;
 }
-
 .nav li.active {
     border-bottom: 2px solid orange;
 }
-
 .menu li a {
     transition: .5s ease;
     margin: 0;
     padding: 0;
 }
-
 .menu li.active a,
-.menu li:hover a {
+.menu li: hover a {
 color: orange;
 }
-
-.header {
-    background: url('../media/bg-imagen.jpeg');
-    background-position: center;
-}
-
 .header .contenedor-titulo {
     text-align: center;
     position: relative;
     z-index: 99;
 }
-
 .header .titulo {
     font-size: 70px;
     text-transform: uppercase;
 }
-
 .header .contenedor-icono {
     position: absolute;
     z-index: 99;
@@ -98,7 +77,6 @@ color: orange;
     font-size: 40px;
     animation: bajar-subir 1s ease infinite;
 }
-
 .bg-video {
     position: absolute;
     z-index: 10;
@@ -112,34 +90,27 @@ color: orange;
     background-size: contain;
     object-fit: cover;
 }
-
 @keyframes bajar-subir {
     0% { transform: translateY(20px); }
     25% { transform: translateY(0); }
     100% { transform: translateY(20px); }
 }
-
 .productos article { 
     background-position: center;
     background-size: cover;
 }
-
 .productos article:nth-child(1) {
-    background-image: url('../media/producto-01.jpg');
+    background-image: url('../media/producto-01.webp');
 }
-
 .productos article:nth-child(2) {
-    background-image: url('../media/producto-02.jpg');
+    background-image: url('../media/producto-02.webp');
 }
-
 .productos article:nth-child(3) {
-    background-image: url('../media/producto-03.jpg');
+    background-image: url('../media/producto-03.webp');
 }
-
 .productos .informacion-producto {
     margin: 0 30px;
 }
-
 .productos .informacion-producto::before {
     content: "";
     height: 50px;
@@ -150,47 +121,38 @@ color: orange;
     top: 50%;
     margin: -10px;
 }
-
 .productos .modelo {
     font-size: 45px;
 }
-
 .productos .descripcion {
     font-size: 22px;
 }
-
 .productos .precio {
     font-size: 25px;
 }
-
 .productos .precio::before {
     content: "$";
     display: inline-block;
 }
-
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
     top: 95%;
 }
-
 .fp-controlArrow.fp-prev {
     left: 80%;
     border-width: 20px 20px 20px 0;
     border-color: transparent #000 transparent transparent;
 }
-
 .fp-controlArrow.fp-next {
     right: 50px;
     border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent #000;
 }
-
 .padre{
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
     
 } 
-
 .footer-video {
     position: absolute;
     z-index: 10;
@@ -233,7 +195,6 @@ color: orange;
     color: #d5d5d5;
     z-index: 99;
 }
-
 .caja2footer{
     display: flex;
     text-align: center;
@@ -266,13 +227,11 @@ color: orange;
     padding: 10px 40px;
     z-index: 99;
 }
-
 .siganos-footer {
     display: block;
     z-index: 99;
     
 }
-
 .siganos-footer .caja-whatsapp{
     
     display: flex;
@@ -341,7 +300,6 @@ color: orange;
     margin: 0 10px;
     z-index: 99;
     }
-
 .ultimo-footer{
     color: #c2c2c2;
     text-align: center;
@@ -355,20 +313,15 @@ color: orange;
     z-index: 99;
     letter-spacing: 2px;
 }
-
-
 .footer .facebook i { color: #3b5998; }
 .footer .twitter i { color: #1da1f2; }
 .footer .instagram i { color: #c13584; }
-
 .footer .facebook:hover { background: #3b5998; }
 .footer .twitter:hover { background: #1da1f2; }
 .footer .instagram:hover { background: #c13584; }
-
 .footer .facebook:hover i { color: #fff; }
 .footer .twitter:hover i { color: #fff; }
 .footer .instagram:hover i { color: #fff; }
-
 @media screen and (max-width: 768px) {
     .menu li a,
     .menu li.active a {
@@ -380,21 +333,19 @@ color: orange;
     .precio {
         font-size: 23px;
     }
-    
 }
-
 @media screen and (max-width: 700px) {
-    .menu li a,
-    .menu li.active a {
+.menu li a,
+.menu li.active a {
         font-size: 18px;
     }
-    .modelo {
+.modelo {
         font-size: 40px;
     }
-    .precio {
+.precio {
         font-size: 23px;
     }
-   .header .titulo {
+.header .titulo {
     font-size: 50px;
 }
 .textos1{
@@ -411,22 +362,18 @@ color: orange;
 .parrafo1{
     font-size: 15px;
 }
-
 .contactenos-footer{
     padding: 30px;
 }
-
 .columna1 p{
     font-size: 15px;
     padding: 10px 30px;
 }
-
 .siganos-footer {
     display: block;
     z-index: 99;
     
 }
-
 .siganos-footer .caja-whatsapp{
     padding-bottom: 18px;
     
@@ -440,8 +387,6 @@ color: orange;
 .siganos-footer .caja-whatsapp .boton-whatsapp .whatsapp{
     padding-right: 20px;
 }
-
-
 .footer .redes-sociales {
     font-size: 28px;
 }
@@ -450,7 +395,6 @@ color: orange;
     height: 50px;
     margin: 0 8px;
     }
-
 .ultimo-footer{
     padding-bottom: 10px;
     padding-top: 10px;
@@ -458,37 +402,29 @@ color: orange;
     letter-spacing: 1px;
 }
 }
-
 @media screen and (max-width: 550px) {
-    
-    .header .titulo {
+.header .titulo {
         font-size: 35px;
     }
-    .header p{
+.header p{
         font-size: 15px;
     }
-
-   .informacion-producto {
+.informacion-producto {
         position: absolute;
         top: 70%;
     }
-    .productos .modelo {
+.productos .modelo {
         font-size: 30px;
     }
-    
-    .slide .informacion-producto .carrucel {
+.slide .informacion-producto .carrucel {
         font-size: 15px;
     }
-
-    .fp-controlArrow.fp-next {
+.fp-controlArrow.fp-next {
         right: 15px;
     }
-
-    .fp-controlArrow.fp-prev {
+.fp-controlArrow.fp-prev {
         right: 25px;
     }
-    
-
 .encabezado-footer{
     align-items: center;
     display: flex;
@@ -512,7 +448,6 @@ color: orange;
 .parrafo1{
     font-size: 10px;
 }
-
 .caja2footer{
     display: block;
     text-align: center;
@@ -531,7 +466,6 @@ color: orange;
     align-items: center;
     padding: 50px 0;
 }
-   
 .columna1 i{
     width: 0px;
 }
@@ -539,70 +473,56 @@ color: orange;
     font-size: 15px;
     padding: 8px 40px;
 }
-
 .siganos-footer {
     display: flex;
     justify-content: center;
        
 }
-
 .siganos-footer .caja-whatsapp .boton-whatsapp .whatsapp{
     padding-right: 20px;
     font-size: 13px;
 }
-
-
 .footer .redes-sociales a {
     margin: 0 5px;
     }
-
 .ultimo-footer{
     
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 10px;
 }
-    .columna1{
+.columna1{
     display: flex;
     text-align: left;
     align-items: center;
     border-right: none;
 } 
 }
-
-
-
 @media screen and (max-width: 450px) {
-    .nav {
+.nav {
         display: block;
         text-align: center;
     }
-
-    .nav a {
+.nav a {
         font-size: 16px;
         margin-bottom: 0;
     }
-
-    .menu {
+.menu {
         display: flex;
         justify-content: space-between;
     }
-
-    .menu li a,
-    .menu li.active a {
+.menu li a,
+.menu li.active a {
         font-size: 15px;
         padding: 5px;
     }
-
-    .titulo {
+.titulo {
         font-size: 45px;
     }
-
-    .productos .modelo {
+.productos .modelo {
         font-size: 30px;
     }
-
-   .encabezado-footer{
+.encabezado-footer{
     align-items: center;
     display: flex;
     text-align: center;
@@ -625,7 +545,6 @@ color: orange;
 .parrafo1{
     font-size: 10px;
 }
-
 .caja2footer{
     display: block;
     text-align: center;
@@ -644,7 +563,6 @@ color: orange;
     align-items: center;
     padding: 50px 0;
 }
-   
 .columna1 i{
     width: 0px;
 }
@@ -652,13 +570,11 @@ color: orange;
     font-size: 15px;
     padding: 8px 40px;
 }
-
 .siganos-footer {
     display: flex;
     justify-content: center;
        
 }
-
 .siganos-footer .caja-whatsapp .boton-whatsapp .whatsapp{
     padding-right: 20px;
     font-size: 13px;
@@ -666,55 +582,44 @@ color: orange;
 .footer .redes-sociales a {
     margin: 0 5px;
     }
-
 .ultimo-footer{
     
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 10px;
 }
-    .columna1{
+.columna1{
     display: flex;
     text-align: left;
     align-items: center;
     border-right: none;
 } 
-    
 }
-
-
 @media screen and (max-width: 420px) {
-    .header .titulo {
+ .header .titulo {
         font-size: 20px;
     }
-    .header p{
+.header p{
         font-size: 10px;
     }
-
-    .productos .modelo {
+.productos .modelo {
         font-size: 20px;
     }
-    p .modelo{
+p .modelo{
         font-size: 20px;
     }
-    .slide .informacion-producto .carrucel {
+.slide .informacion-producto .carrucel {
         font-size: 13px;
     }
-    
-    .fp-controlArrow.fp-prev {
+.fp-controlArrow.fp-prev {
  
     border-width: 13px 13px 13px 0;
 }
-
 .fp-controlArrow.fp-next {
 
     border-width: 13px 0 13px 13px;
 }
-    
-    
-    
-
-    .encabezado-footer{
+.encabezado-footer{
     align-items: center;
     display: flex;
     text-align: center;
@@ -729,14 +634,11 @@ color: orange;
     
 }
 .texto1{
-    
     font-size: 30px;
-    
-}   
+    }   
 .parrafo1{
     font-size: 8px;
 }
-
 .caja2footer{
     display: block;
     text-align: center;
@@ -753,7 +655,6 @@ color: orange;
     position: relative;
     
 }
-   
 .columna1{
     display: flex;
     text-align: left;
@@ -767,7 +668,6 @@ color: orange;
     font-size: 15px;
     padding: 8px 40px;
 }
-
 .siganos-footer {
     display: inline-block;
     justify-content: center;
@@ -775,22 +675,21 @@ color: orange;
     vertical-align: middle;
     
 }
-
 .siganos-footer .caja-whatsapp .boton-whatsapp .whatsapp{
     font-size: 15px;
 }
-
-
 .footer .redes-sociales a {
     margin: 0 5px;
     }
-
 .ultimo-footer{
     
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 10px;
 }
-
-    
+}
+@media screen and (max-height: 500px){
+.encabezado-footer{
+        display: none;
+    }
 }
