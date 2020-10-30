@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #120c72;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.top, .button{
+    margin: auto;
+    text-align: center;
+}
+.top p{
+    padding-top: 12px;
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+.top h1{
+    padding: 0;
+    margin: 0;
+    font-size: 10em;
+    font-weight: 900;
+    transform: translateY(-25px);
+}
+.animacion{
+    margin: auto;
+    text-align: center;
+    width: 516px;
+    height: 224px;
+    transform: translateY(-50px);
+}
+.animacion img{
+    position: relative;
+    transform: translateX(50px);
+    width: 80%;
+    pointer-events: none;
+}
+.button{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    z-index: 9;
+}
+.button p{
+    font-size: 1.1em;
+    position: relative;
+    bottom: 70px;
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 12px 70px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    position: relative;
+    bottom: 35px;
+    transition: all 300ms ease;
+}
+.button a:hover{
+    color: #120c72;
+    background-color: #fff;
+}
+.ola1{
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 250px;
+    background-image: url(ola1.svg);
+    background-size: cover;
+    animation: 750ms infinite slidein;
+    z-index: 5;
+}
+@keyframes slidein {
+    0%{
+        background-position: -150px 0;
+    }
+    10%{
+        background-position: -135px 0;
+    }
+    20%{
+        background-position: -120px 0;
+    }
+    30%{
+        background-position: -105px 0;
+    }
+    40%{
+        background-position: -90px 0;
+    }
+    50%{
+        background-position: -75px 0;
+    }
+    60%{
+        background-position: -60px 0;
+    }
+    70%{
+        background-position: -45px 0;
+    }
+    80%{
+        background-position: -30px 0;
+    }
+    90%{
+        background-position: -15px 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.ola2{
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 300px;
+    background-image: url(ola2.svg);
+    background-size: cover;
+    animation: 1.5s infinite slidein;
+    z-index: 3;
+}
+.guppyd{
+    position: absolute;
+    display: flex;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    width: 275px;
+}
+.guppyd img{
+    width: 20%;
+    margin-right: 10px;
+}
+.guppyd h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 320px and portrait){
+    .top p{
+        padding-top: 12px;
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
+    .top h1{
+        font-size: 7.5em;
+        transform: translateY(-25px);
+    }
+    .animacion{
+        width: 275px;
+        transform: translateY(0);
+    }
+    .animacion img{
+        position: relative;
+        transform: translateX(15px);
+    }
+}
