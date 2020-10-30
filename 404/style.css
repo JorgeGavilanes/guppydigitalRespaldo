@@ -142,7 +142,54 @@ body{
     font-weight: 400;
     letter-spacing: 1px;
 }
-@media only screen and (max-width: 320px) and (orientation: portrait) and (min-height: 600px){
+@media only screen and (max-width: 520px) and (orientation: portrait){
+    .top h1{
+        font-size: 8em;
+        transform: translateY(-25px);
+    }
+    .animacion{
+        width: 100%;
+        height: auto;
+        transform: translateY(0);
+    }
+    .animacion img{
+        transform: translateX(15px);
+        width: 90%;
+    }
+    .button{
+        bottom: 15%;
+    }
+    .button p{
+        padding: 0 5px;
+        margin: auto;
+    }
+    .button a{
+        padding: 12px 70px;
+        margin-top: 25px;
+    }
+    .ola1{
+        animation: 850ms infinite slidein;
+    }
+    .ola2{
+        display: none;
+    }
+    .guppyd{
+        width: 100px;
+        position: absolute;
+        display: flex;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .guppyd img{
+        width: 40px;
+        margin: 0 auto 20px auto;
+    }
+    .guppyd h2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 320px) and (orientation: portrait){
     .top h1{
         font-size: 7.5em;
         transform: translateY(-25px);
@@ -189,7 +236,7 @@ body{
         display: none;
     }
 }
-@media only screen and (max-width: 255px) and (orientation: portrait) and (min-height: 600px){
+@media only screen and (max-width: 255px) and (orientation: portrait){
     .top h1{
         font-size: 5.3em;
         transform: translateY(-25px);
@@ -218,5 +265,49 @@ body{
     }
     .ola1{
         animation: 850ms infinite slidein;
+    }
+}
+@media only screen and (max-height: 520px) and (orientation: landscape){
+    .top h1{
+        font-size: 6em;
+        transform: translateY(0);
+    }
+    .top p{
+        display: none;
+    }
+    .animacion{
+        width: 90%;
+        height: auto;
+        transform: translateY(0);
+    }
+    .animacion img{
+        transform: translateX(15px);
+        width: 40%;
+    }
+    .button{
+        bottom: 0;
+        margin: 0;
+        padding; 0;
+    }
+    .button p{
+        padding: 0 5px;
+        margin: auto;
+        margin: 0;
+        padding; 0;
+    }
+    .button a{
+        padding: 12px 70px;
+        margin-top: 25px;
+        margin: 0;
+        padding; 0;
+    }
+    .ola1{
+        display: none;
+    }
+    .ola2{
+        display: none;
+    }
+    .guppyd{
+        display: none;
     }
 }
