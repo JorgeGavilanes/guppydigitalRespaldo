@@ -135,28 +135,88 @@ body{
 .guppyd img{
     width: 20%;
     margin-right: 10px;
+    pointer-events: none;
 }
 .guppyd h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
-@media only screen and (max-width: 320px and portrait){
-    .top p{
-        padding-top: 12px;
-        margin-bottom: 0;
-        font-size: 1.1em;
-    }
+@media only screen and (max-width: 320px) and (orientation: portrait) and (min-height: 600px){
     .top h1{
         font-size: 7.5em;
         transform: translateY(-25px);
     }
     .animacion{
-        width: 275px;
+        width: 100%;
+        height: auto;
         transform: translateY(0);
     }
     .animacion img{
-        position: relative;
         transform: translateX(15px);
+        width: 90%;
+    }
+    .button{
+        bottom: 15%;
+    }
+    .button p{
+        padding: 0 5px;
+        margin: auto;
+    }
+    .button a{
+        padding: 12px 70px;
+        margin-top: 25px;
+    }
+    .ola1{
+        animation: 850ms infinite slidein;
+    }
+    .ola2{
+        display: none;
+    }
+    .guppyd{
+        width: 100px;
+        position: absolute;
+        display: flex;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .guppyd img{
+        width: 40px;
+        margin: 0 auto 20px auto;
+    }
+    .guppyd h2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 255px) and (orientation: portrait) and (min-height: 600px){
+    .top h1{
+        font-size: 5.3em;
+        transform: translateY(-25px);
+    }
+    .animacion{
+        width: 100%;
+        height: auto;
+        transform: translateY(0);
+    }
+    .animacion img{
+        transform: translateX(0);
+        width: 90%;
+    }
+    .button{
+        bottom: 15%;
+    }
+    .button p{
+        padding: 0 5px;
+        margin: auto;
+        font-size: 1em;
+    }
+    .button a{
+        padding: 12px 50px;
+        margin-top: 25px;
+        font-size: 1em;
+    }
+    .ola1{
+        animation: 850ms infinite slidein;
     }
 }
