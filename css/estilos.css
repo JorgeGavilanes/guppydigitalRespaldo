@@ -1,0 +1,710 @@
+*{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+	margin:0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+/*_________________________________
+---------------------------------
+***HEADER***
+_________________________________
+---------------------------------*/
+.home{
+	height: 75vh;
+	overflow: hidden;
+	position: relative;
+}
+.home #s1{
+    background-color: #1d414d;
+}
+.home #s2{
+    background-color: #ff8000;
+}
+.home #s3{
+    background-color: #5f9ed4;
+}
+.home .slide{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index:1; 
+	display:none;
+	padding:0 15px;
+	animation: slide 2s ease;
+}
+.home .slide.active{
+	display: flex;
+}
+@keyframes slide{
+	0%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+	
+}
+.home .container{
+	flex-grow: 1;
+}
+.home .flotante{
+	display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: space-between;
+}
+.home .caption{
+	width:50%;
+}
+.home .captionright{
+    width: 50%;
+    float: right;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.home .captionright img{
+    width: 350px;
+}
+.home .caption h1{
+	font-size: 3em;
+	color:#fff;
+	margin:0;
+	
+}
+.home .slide.active .caption h1{
+	opacity:0;
+	animation: captionText .3s ease forwards;
+	animation-delay:.3s;
+}
+.home .caption p{
+	font-size: 1.5em;
+	margin:15px 0 30px;
+	color:#fff;
+    font-weight: 100;
+    line-height: 175%;
+}
+.home .slide.active .caption p{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:.5s;
+}
+.home .enlaces{
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+	left: 50%;
+	bottom: 70px;
+    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+}
+.home .enlaces a{
+    display: flex;
+    text-decoration: none;
+    color:#fff;
+    width: 200px;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: 100;
+    height: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    transition: all 300ms ease;
+}
+.home .enlaces #e1{
+    color: #1d414d;
+    background-color: #fff;
+}
+.home .enlaces #e2{
+    color: #ff8000;
+    background-color: #fff;
+}
+.home .enlaces #e3{
+    color: #5f9ed4;
+    background-color: #fff;
+}
+.home .enlaces .aexplorar:hover, .home .enlaces .amservicios:hover{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.home .enlaces .amservicios{
+    border: solid 2px #fff;
+}
+.home .slide.active .enlaces a{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:300ms;
+}
+@keyframes captionText{
+	0%{
+		opacity:0; transform: translateX(-100px);
+	}
+	100%{
+	 opacity:1; transform: translateX(0px);	
+	}
+}
+.home .controls .prev,
+.home .controls .next{
+    position: absolute;
+    z-index:2;
+    top:50%;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    font-size:20px;
+    cursor:pointer;
+    transition: all .5s ease;
+    margin: 10px;
+    opacity: .5;
+}
+.home .controls .prev:hover,
+.home .controls .next:hover{
+    opacity: 1;
+}
+.home .controls .prev{
+    left:0;
+}
+.home .controls .next{
+    right:0;
+}
+.home .indicator{
+	position: absolute;
+	left:50%;
+	bottom:20px;
+	z-index: 2;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.home .indicator div{
+	display: inline-block;
+	width:18px;
+	height: 18px;
+	border: solid 2px #fff;
+	border-radius: 50%;
+    -webkit-border-radius: 50%;
+	text-align: center;
+	margin:0 15px;
+}
+.home .indicator div.active{
+    background-color: #fff;
+}
+/*_________________________________
+---------------------------------
+***SECTION1***
+_________________________________
+---------------------------------*/
+.servicios{
+    width: 100%;
+    padding: 75px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #F8F8FF;
+}
+.textoarticle{
+    margin-bottom: 50px;
+}
+.textoarticle h2{
+    font-size: 3em;
+    color: #576975;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.textoarticle p{
+    font-size: 1.5em;
+    color: #82919a;
+    line-height: 1.5em;
+}
+.fwrap{
+    flex-wrap: wrap;
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.seccionwrap{
+    background-color: #fff;
+    width: 30%;
+    height: 350px;
+    padding: 30px 50px;
+    margin: 25px 15px;
+    transition: all 300ms ease;
+}
+.seccionwrap:hover{
+    box-shadow:0 0 35px rgba(0,0,0,.08);
+    transform: translateY(-10px);
+}
+.seccionwrap img{
+    font-size: 75px;
+    color: #1b7ae8;
+    padding: 15px 0;
+    height: 91px;
+}
+.seccionwrap h2{
+    color: #576975;
+    padding: 10px
+}
+.seccionwrap p{
+    color: #82919a;
+    line-height: 2em;
+    padding: 10px;
+}
+/*_________________________________
+---------------------------------
+***MEJOR EXPERIENCIA***
+_________________________________
+---------------------------------*/
+.ux-class{
+    background-image: url(../media/src/ux.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ff8000;
+    height: 250px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+.ux-class .ux-class_animate{
+    display: block;
+    margin: auto;
+}
+.ux-class .ux-class_animate h2{
+    font-size: 3em;
+}
+.ux-class .ux-class_animate p{
+    font-size: 1.5em;
+	color:#fff;
+    line-height: 175%;
+    width: 525px;
+}
+.ux-class .ux-class_animate button{
+    color: #fff;
+    border: solid 2px #fff;
+    background-color: transparent;
+    padding: 10px 50px;
+    margin: 10px 15px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.ux-class .ux-class_animate button:hover{
+    color: #ff8000;
+    border: solid 2px #fff;
+    background-color: #fff;
+    padding: 10px 50px;
+    margin: 10px 15px;
+}
+/*_________________________________
+---------------------------------
+***MEDIAQUERIES***
+_________________________________
+---------------------------------*/
+@media only screen and (max-width: 1320px) {
+    .home .captionright img{
+        width: 275px;
+    }
+    .home .caption h1{
+	    font-size: 2.5em;
+        margin-left: 15px;
+    }
+    .home .caption p{
+	    font-size: 1.3em;
+        margin-left: 15px;
+    }
+    .home .controls .prev, .home .controls .next{
+        display: none;
+    }
+    .servicios{
+        padding: 75px 35px;
+    }
+    .textoarticle{
+        margin-bottom: 30px;
+    }
+    .textoarticle h2{
+        font-size: 3em;
+        color: #576975;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+    .textoarticle p{
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+    .seccionwrap{
+        padding: 25px 30px;
+    }
+    .seccionwrap i{
+        font-size: 70px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.3em;
+    }
+    .seccionwrap p{
+        line-height: 2em;
+        padding: 10px 0;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .home{
+	    height: 475px;
+    }
+    .home .indicator{
+	    display: block;
+    }
+    .home .enlaces a{
+        position: relative;
+        top: 15px;
+        font-size: 1.2em;
+        margin: 0 30px;
+    }
+    .home .enlaces .aexplorar:hover, .home .enlaces .amservicios:hover{
+        font-size: 1.3em;
+    }
+    .home .captionright img{
+        width: 275px;
+    }
+    .home .caption h1{
+	font-size: 2.3em;
+    }
+    .home .caption p{
+	    font-size: 1em;
+    }
+    .servicios{
+        padding: 50px 35px;
+    }
+    .textoarticle{
+        margin-bottom: 15px;
+    }
+    .textoarticle h2{
+        font-size: 2.8em;
+    }
+    .textoarticle p{
+        font-size: 1em;
+        line-height: 2em;
+    }
+    .seccionwrap{
+        width: 45%;
+    }
+    .seccionwrap i{
+        font-size: 70px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.3em;
+    }
+    .seccionwrap p{
+        line-height: 2em;
+        padding: 5px 0;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    .ux-class .ux-class_animate button{
+        padding: 10px 50px;
+        margin: 0;
+        font-size: 1em;
+    }
+    .ux-class .ux-class_animate button:hover{
+        padding: 10px 50px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .servicios{
+        padding: 35px;
+    }
+    .textoarticle{
+        margin-bottom: 15px;
+    }
+    .textoarticle h2{
+        font-size: 2.8em;
+    }
+    .textoarticle p{
+        font-size: 1em;
+        line-height: 1.8em;
+        width: 475px;
+        margin: auto;
+    }
+    .seccionwrap{
+        width: 75%;
+    }
+    .seccionwrap i{
+        font-size: 75px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.5em;
+    }
+    .seccionwrap p{
+        line-height: 2em;
+        padding: 5px 25px;
+        font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home{
+        height: 650px;
+    }
+    .slider .container .flotante{
+        display: block;
+    }
+    .flotante .caption{
+        width: 80%;
+        margin: auto;
+    }
+    .flotante .captionright{
+        margin: auto;
+        width: 100%;
+    }
+    .home .enlaces a{
+        top: 15px;
+        margin: 0 15px;
+        width: 150px;
+    }
+    .servicios{
+        padding: 35px;
+    }
+    .textoarticle{
+        margin-bottom: 15px;
+    }
+    .textoarticle h2{
+        font-size: 2.8em;
+    }
+    .textoarticle p{
+        font-size: 1em;
+        line-height: 1.8em;
+        width: 400px;
+        margin: auto;
+    }
+    .seccionwrap{
+        width: 75%;
+    }
+    .seccionwrap i{
+        font-size: 75px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.5em;
+    }
+    .seccionwrap p{
+        line-height: 2em;
+        padding: 5px 25px;
+        font-size: 1.1em;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    .ux-class .ux-class_animate button{
+        padding: 10px 50px;
+        margin: 0;
+        font-size: 1em;
+    }
+    .ux-class .ux-class_animate button:hover{
+        padding: 10px 50px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .home{
+        height: 675px;
+    }
+    .home .enlaces .amservicios{
+        display: none;
+    }
+    .home .enlaces a{
+        margin: 0 15px;
+        width: 175px;
+    }
+    .home .indicator{
+	    bottom: 10px;
+    }
+    .home .enlaces a{
+        top: 25px;
+    }
+    .textoarticle p{
+        text-align: justify;
+        width: 350px;
+        padding: 0 15px;
+    }
+    .seccionwrap{
+        width: 90%;
+    }
+    .seccionwrap i{
+        font-size: 75px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.5em;
+    }
+    .seccionwrap p{
+        line-height: 2em;
+        padding: 5px 0;
+        font-size: 1.1em;
+        text-align: justify;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .ux-class .ux-class_animate button{
+        padding: 10px 50px;
+        margin: 0;
+        font-size: 1em;
+    }
+    .ux-class .ux-class_animate button:hover{
+        padding: 10px 50px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home .caption h1{
+	    font-size: 2em;
+        padding: 0;
+        margin: 0;
+    }
+    .home .caption p{
+	    font-size: 1em;
+        padding: 0;
+        margin: 25px 0 0 0;
+    }
+    .home .captionright img{
+        margin-top: 10px;
+        width: 250px;
+    }
+    .home .enlaces a{
+        top: 25px;
+    }
+    .textoarticle h2{
+        font-size: 2em;
+    }
+    .textoarticle p{
+        width: 300px;
+        padding: 15px 15px 0 15px;
+        line-height: 2em;
+    }
+    .seccionwrap{
+        width: 90%;
+    }
+    .seccionwrap i{
+        font-size: 75px;
+        padding: 15px 0 10px 0;
+    }
+    .seccionwrap h2{
+        font-size: 1.1em;
+    }
+    .seccionwrap p{
+        padding: 5px 0;
+        font-size: 1em;
+        text-align: justify;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 1.8em;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate button{
+        padding: 10px 50px;
+        margin: 0;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .home{
+        height: 600px;
+    }
+    .home .caption h1{
+	    font-size: 1.3em;
+    }
+    .home .caption p{
+	    font-size: 1em;
+        margin: 15px 0 0 0;
+    }
+    .home .captionright img{
+        width: 200px;
+    }
+    .home .enlaces a{
+        top: 25px;
+    }
+    .home .indicator div{
+	    margin:0 10px;
+    }
+    .textoarticle p{
+        width: 220px;
+    }
+    .seccionwrap{
+        width: 90%;
+        height: 350px;
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .seccionwrap i{
+        font-size: 50px;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 1.2em;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 220px;
+        margin-bottom: 15px;
+    }
+}

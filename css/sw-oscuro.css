@@ -1,0 +1,61 @@
+.oscuro .disenoUiUx, .oscuro .preciosWeb{
+    background-color: #243445;
+}
+.oscuro .caracteristicas, .oscuro .tecnologias{
+    background-color: #17202A;
+}
+.oscuro .box{
+    background-color: #34495E;
+}
+.oscuro .caracteristicas h1{
+    color: #576975;
+}
+.oscuro .caracteristicas h2{
+    color: #82919a;
+}
+.oscuro .caracteristicas p{
+    color: #82919a;
+}
+.oscuro .svg-img{
+    fill: #17202A;
+    background-color: #243445;
+}
+
+
+
+
+.oscuro .snip1517 {
+    color: #ffffff;
+}
+.oscuro .snip1517 .plan {
+    background-color: #222f3d;
+}
+.oscuro .snip1517 header {
+    color: #ffffff;
+}
+.oscuro .snip1517 .plan-title:after {
+    background-color: #fff;
+}
+.oscuro .snip1517 .plan-features .centerli{
+    color: lawngreen;
+}
+.oscuro .snip1517 .plan-features i {
+    color: rgba(255, 255, 255, 0.5);
+}
+.oscuro .snip1517 .plan-select {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.oscuro .snip1517 .plan-select a {
+    background-color: #156dab;
+    color: #ffffff;
+}
+.oscuro .snip1517 .plan-select a:hover {
+    background-color: #1b8ad8 !important;
+}
+.oscuro .snip1517 .featured {
+    border: 2px solid #156dab;
+    background-color: #156dab;
+}
+.oscuro .snip1517 .featured .plan-select a {
+    background-color: #10507e;
+}

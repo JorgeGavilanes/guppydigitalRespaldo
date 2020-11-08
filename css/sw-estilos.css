@@ -1,0 +1,951 @@
+*{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+	margin:0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+/*---------------------------------
+---------------------------------
+***CARACTERÍSTICAS***
+---------------------------------
+---------------------------------*/
+.caracteristicas{
+    display: block;
+    padding: 75px 50px 0 50px;
+    /*background: linear-gradient(to top, #007DD0, #005C99);*/
+    background: #007DD0;
+}
+.caracteristicas h1{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    line-height: 1.3em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.caracteristicas h2{
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+.caracteristicas p{
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 100;
+    line-height: 2em;
+}
+.c-seccion1, .c-seccion2{
+    display: flex;
+    align-items: center;
+}
+.caracteristicas .c-s-t, .caracteristicas .c-s-i{
+    width: 50%;
+    padding: 25px 75px;
+}
+#movil-c-s-i{
+    display: none;
+}
+.c-s-i img{
+    width: 475px;
+}
+.c-seccion2 .c-s-t{
+    text-align: end;
+}
+.c-seccion2 .c-s-t p{
+    margin-left: auto;
+}
+/*---------------------------------
+---------------------------------
+***SVG***
+---------------------------------
+---------------------------------*/
+.svg-img{
+    background-color: #fefefe;
+}
+/*---------------------------------
+---------------------------------
+***DISENOUIUX***
+---------------------------------
+---------------------------------*/
+.disenoUiUx{
+    padding: 15px 50px 75px 50px;
+    background-color: #fefefe;
+}
+.textosUiUx{
+    max-width: 1000px;
+    margin: auto;
+}
+.textosUiUx h2, .ui-phone h2, .ux-phone h2{
+    text-align: center;
+    font-size: 3em;
+    color: #576975;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.textosUiUx p{
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    color: #82919a;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+    font-weight: 100;
+}
+.ui-phone p, .ux-phone p{
+    font-size: 1.3em;
+    color: #82919a;
+    line-height: 1.5em;
+}
+.disenoUiUx .container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto 25px auto;
+}
+.container .inner {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+}
+.ui-phone, .ux-phone, .comparison-slider-wrapper {
+    margin: auto;
+}
+.ui-phone p, .ux-phone p{
+    width: 250px;
+}
+.comparison-slider-wrapper {
+    position: relative;
+    width: 250px;
+    margin: 0;
+}
+.comparison-slider-wrapper .comparison-slider {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.comparison-slider-wrapper .comparison-slider > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.comparison-slider-wrapper .comparison-slider .resize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+.comparison-slider-wrapper .comparison-slider .resize > img {
+  display: block;
+}
+.comparison-slider-wrapper .comparison-slider .resize .overlay {
+  right: auto;
+  left: 20px;
+  text-align: left;
+}
+.comparison-slider-wrapper .comparison-slider .divider {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  cursor: ew-resize;
+}
+.comparison-slider-wrapper .comparison-slider .divider:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -9px;
+  top: 50%;
+  margin-top: -10px;
+  background-color: #ff8000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.comparison-slider-wrapper .comparison-slider .divider:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/*---------------------------------
+---------------------------------
+***TECNOLOGIAS***
+---------------------------------
+---------------------------------*/
+.tecnologias{
+    background:rgba(248, 248, 255, 1);
+    padding: 75px 50px;   
+}
+.container-all{
+    max-width: 1000px;
+    margin: auto;
+}
+.main-title{
+    text-align: center;
+    font-size: 3em;
+    color: #576975;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.main-subtitle{
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    color: #82919a;
+    line-height: 1.5em;
+}
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tecnologias .box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 25px 20px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.tecnologias .box3:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+.box .icon,
+.box h3,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 300ms ease;
+}
+.tecnologias .box .icon{
+    transform: translateY(30px);
+    margin: auto;
+}
+.tecnologias .box .html5{
+    background: url(../media/icon/logo_html.svg);
+    width: 51px;
+    height: 58px;
+}
+.tecnologias .box:hover .html5{
+    background: url(../media/icon/oscuro_logo_html.svg);
+    width: 31px;
+    height: 35px;
+    transform: translateY(0);
+}
+.tecnologias .box .css3{
+    background: url(../media/icon/logo_css.svg);
+    width: 51px;
+    height: 58px;
+}
+.tecnologias .box:hover .css3{
+    background: url(../media/icon/oscuro_logo_css.svg);
+    width: 31px;
+    height: 35px;
+    transform: translateY(0);
+}
+.tecnologias .box .javascript{
+    background: url(../media/icon/logo_javascript.svg);
+    width: 58px;
+    height: 58px;
+}
+.tecnologias .box:hover .javascript{
+    background: url(../media/icon/oscuro_logo_javascript.svg);
+    width: 38px;
+    height: 38px;
+    transform: translateY(0);
+}
+.tecnologias .box .php{
+    background: url(../media/icon/logo_php.svg);
+    width: 110px;
+    height: 58px;
+}
+.tecnologias .box:hover .php{
+    background: url(../media/icon/oscuro_logo_php.svg);
+    width: 70px;
+    height: 37px;
+    transform: translateY(0);
+}
+.tecnologias .box .wordpress{
+    background: url(../media/icon/logo_wordpress.svg);
+    width: 58px;
+    height: 58px;
+}
+.tecnologias .box:hover .wordpress{
+    background: url(../media/icon/oscuro_logo_wordpress.svg);
+    width: 38px;
+    height: 38px;
+    transform: translateY(0);
+}
+.tecnologias .box .adobe{
+    background: url(../media/icon/logo_adobe.svg);
+    width: 60px;
+    height: 58px;
+}
+.tecnologias .box:hover .adobe{
+    background: url(../media/icon/oscuro_logo_adobe.svg);
+    width: 40px;
+    height: 38px;
+    transform: translateY(0);
+}
+.box h3,
+.box p{
+    margin-top: 10px;
+}
+.tecnologias .box h3{
+    font-size: 1.5em;
+    transform: translateY(30px);
+    color: #576975;
+}
+.box:hover h3{
+    transform: translateY(0);
+    color: white;
+}
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    line-height: 1.5em;
+}
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255, 115, 0), rgb(255, 148, 48));
+}
+.tecnologias .box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+.tecnologias .box1 .icon{
+    color: #e44d26;
+}
+.tecnologias .box1 .background-hover{
+    background: linear-gradient(to bottom, #e44d26, #f16529);
+    top: -170px;
+    left: -250px;
+}
+.tecnologias .box2 .icon{
+    color: #264de4;
+}
+.tecnologias .box2 .background-hover{
+    background: linear-gradient(to bottom, #264de4, #2965f1);
+    top: -170px;
+    left: 500px;
+}
+.tecnologias .box3 .icon{
+    color: #f7df1e;
+}
+.tecnologias .box3 .background-hover{
+    background: linear-gradient(to bottom, #f7df1e, #f7e24c);
+    top: 170px;
+    left: 500px;
+}
+.tecnologias .box4 .icon{
+    color: #787cb5;
+}
+.tecnologias .box4 .background-hover{
+    background: linear-gradient(to bottom, #474a8a, #787cb5);
+    top: 170px;
+    left: -500px;
+}
+.tecnologias .box5 .icon{
+    color: #00749c;
+}
+.tecnologias .box5 .background-hover{
+    background: linear-gradient(to bottom, #00749c, #009FD6);
+    top: -170px;
+    left: -250px;
+}
+.tecnologias .box6 .icon{
+    color: #f40f02;
+}
+.tecnologias .box6 .background-hover{
+    background: linear-gradient(to bottom, #f40f02, #FF4E43);
+    top: -170px;
+    left: 500px;
+}
+/*_________________________________
+---------------------------------
+***PRECIOS WEB***
+---------------------------------
+___________________________________
+*/
+.preciosWeb{
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    padding: 75px 50px 50px 50px;
+    width: 100%;
+}
+.preciosWeb h2{
+    text-align: center;
+    font-size: 3em;
+    color: #576975;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+.contenedor-plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+}
+.snip1517 {
+    color: #576975;
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    max-width: 95%;
+    margin: 30px 10px;
+}
+.snip1517 .plan {
+    margin: 0 0.5%;
+    width: 24%;
+    padding-top: 10px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    background:rgba(248, 248, 255, 1);
+    border-radius: 8px;
+}
+.snip1517 .plan:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.25);
+}
+.snip1517 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.snip1517 header {
+    color: #576975;
+}
+.snip1517 .plan-title {
+    line-height: 60px;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.snip1517 .plan-title:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: #576975;
+}
+.snip1517 .plan-cost {
+    padding: 0 20px;
+    margin: 0;
+}
+.snip1517 .plan-price {
+    font-weight: 400;
+    font-size: 2.8em;
+    margin: 10px 0;
+    display: inline-block;
+}
+.snip1517 .plan-type {
+    opacity: 0.8;
+    font-size: 0.7em;
+    text-transform: uppercase;
+}
+.snip1517 .plan-features {
+    padding: 0 0 20px;
+    margin: 0;
+    list-style: outside none none;
+    font-size: 0.9em;
+}
+.snip1517 .plan-features li {
+    padding: 8px 20px;
+}
+.snip1517 .plan-features .centerli{
+    color: #2ECC71;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+.snip1517 .plan-features i {
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.snip1517 .plan-select {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+.snip1517 .plan-select a {
+    background-color: #156dab;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+}
+.snip1517 .plan-select a:hover {
+    background-color: #1b8ad8 !important;
+}
+.snip1517 .featured {
+    margin-top: -10px;
+    z-index: 1;
+    border-radius: 8px;
+    border: 2px solid #156dab;
+    background-color: #156dab;
+    color: #fff;
+}
+.snip1517 .featured header{
+    color: #fff;
+}
+.snip1517 .featured .plan-title:after{
+    background-color: #fff;
+}
+.snip1517 .featured .plan-select {
+    padding: 30px 20px;
+}
+.snip1517 .featured .plan-select a {
+    background-color: #10507e;
+}
+.snip1517 .featured .plan-features .centerli{
+    color: lime;
+}
+/*_________________________________
+---------------------------------
+***MEJOR EXPERIENCIA***
+_________________________________
+---------------------------------*/
+.ux-class{
+    background-image: url(../media/src/ux.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ff8000;
+    height: 250px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+.ux-class .ux-class_animate{
+    display: block;
+    margin: auto;
+}
+.ux-class .ux-class_animate h2{
+    font-size: 3em;
+}
+.ux-class .ux-class_animate p{
+    font-size: 1.5em;
+	color:#fff;
+    line-height: 175%;
+    width: 525px;
+}
+.ux-class .ux-class_animate button{
+    color: #fff;
+    border: solid 2px #fff;
+    background-color: transparent;
+    padding: 10px 50px;
+    margin: 10px 15px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.ux-class .ux-class_animate button:hover{
+    color: #ff8000;
+    border: solid 2px #fff;
+    background-color: #fff;
+    padding: 10px 50px;
+    margin: 10px 15px;
+}
+/*_________________________________
+---------------------------------
+***MEDIAQUERIES***
+_________________________________
+---------------------------------*/
+@media only screen and (max-width: 1320px) {
+    .caracteristicas{
+        padding: 75px 35px 0 35px;
+    }
+    .caracteristicas h2{
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+    .caracteristicas .c-s-t, .caracteristicas .c-s-i{
+        padding: 25px 35px;
+    }
+    .caracteristicas .c-s-i-first{
+        text-align: end;
+    }
+    .c-s-i img{
+        width: 350px;
+    } 
+    .ux-class .ux-class_animate h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 1060px){
+    .snip1517 .plan-title {
+        font-size: 1.3em;
+    }
+    .snip1517 .plan-type {
+        display: none;
+    }
+    .snip1517 .plan-select a {
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .caracteristicas h1{
+        font-size: 2.3em;
+    }
+    .caracteristicas h2{
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+    .caracteristicas p{
+        padding: 0 18px;
+    }
+    .c-seccion1, .c-seccion2{
+        display: block;
+    }
+    .caracteristicas .c-s-t, .caracteristicas .c-s-i{
+        width: 100%;
+        padding: 25px 35px;
+        text-align: center;
+    }
+    #movil-c-s-i{
+        display: block;
+    }
+    #pc-c-s-i{
+        display: none;
+    }
+    .caracteristicas .c-s-i{
+        padding-bottom: 0;
+    }
+    .c-s-i img{
+        width: 450px;
+        margin: auto;
+    }
+    .disenoUiUx{
+    padding: 15px 50px;
+}
+    .disenoUiUx-move{
+        position: relative;
+        top: -60px;
+    }
+    .textosUiUx h2{
+        margin-bottom: 10px;
+        font-size: 2.3em;
+    }
+    .textosUiUx p{
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+    .disenoUiUx .container {
+        margin: 25px auto;
+        margin-bottom: 0;
+    }
+    .disenoUiUx .container .comparison-slider-wrapper{
+        margin: auto;
+    }
+    .ui-phone, .ux-phone{
+        display: none;
+    }
+    .main-title, .preciosWeb h2{
+    font-size: 2.3em;
+    }
+    .main-subtitle{
+        font-size: 1.1em;
+    }
+    .tecnologias .box{
+        width: 220px;
+        height: 180px;
+        padding: 20px;
+        margin: 15px;
+    }
+    .snip1517 .plan {
+        width: 49%;
+        margin: 10px 0.5%;
+    }
+    .snip1517 .plan-title {
+        font-size: 1.6em;
+    }
+    .snip1517 .plan-title,
+    .snip1517 .plan-select a {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .snip1517 .plan-features .centerli{
+        text-align: left;
+    }
+    .snip1517 .plan-select,
+    .snip1517 .featured .plan-select {
+        padding: 20px;
+    }
+    .snip1517 .featured {
+        margin-top: 0;
+    }
+    .snip1517 .featured header {
+        line-height: 70px;
+    }
+    .ux-class .ux-class_animate h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+    .ux-class .ux-class_animate p{
+    font-size: 1em;
+        width: 500px;
+    margin-bottom: 10px;
+}
+    .ux-class .ux-class_animate button{
+    padding: 10px 50px;
+    margin: 0;
+    font-size: 1em;
+}
+    .ux-class .ux-class_animate button:hover{
+    padding: 10px 50px;
+    margin: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .caracteristicas h1{
+        font-size: 2em;
+    }
+    .caracteristicas h2{
+        font-size: 1.5em;
+    }
+    .caracteristicas p{
+        padding: 0 18px;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+    .c-s-i img{
+        width: 380px;
+    }
+    .textosUiUx h2{
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    .textosUiUx p{
+        line-height: 1.5em;
+        font-size: 1em;
+}
+    .main-title, .preciosWeb h2{
+        font-size: 2em;
+    }
+    .main-subtitle{
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+    .tecnologias .box{
+        width: 220px;
+        height: 180px;
+        padding: 20px;
+        margin: 15px;
+    }
+    .ux-class .ux-class_animate h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+    .ux-class .ux-class_animate p{
+    font-size: 1em;
+        width: 400px;
+    margin-bottom: 10px;
+}
+    .ux-class .ux-class_animate button{
+    padding: 10px 50px;
+    margin: 0;
+    font-size: 1em;
+}
+    .ux-class .ux-class_animate button:hover{
+    padding: 10px 50px;
+    margin: 0;
+    }
+}
+@media only screen and (max-width: 580px){
+    .snip1517 .plan-title {
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .caracteristicas{
+        padding: 75px 25px 0 25px;
+    }
+    .caracteristicas h1{
+        font-size: 1.6em;
+    }
+    .caracteristicas h2{
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+    .caracteristicas p{
+        padding: 0;
+    }
+    .c-s-i img{
+        width: 250px;
+    }
+    .disenoUiUx-move{
+        top: -70px;
+    }
+    .textosUiUx h2{
+        margin-bottom: 10px;
+        font-size: 1.6em;
+    }
+    .main-title, .preciosWeb h2{
+        font-size: 1.6em;
+    }
+    .snip1517 .plan-title {
+        font-size: 1.6em;
+    }
+    .snip1517 .plan {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .ux-class .ux-class_animate button{
+    padding: 10px 50px;
+    margin: 0;
+    font-size: 1em;
+}
+    .ux-class .ux-class_animate button:hover{
+    padding: 10px 50px;
+    margin: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .caracteristicas .c-s-t, .caracteristicas .c-s-i{
+        padding: 15px;
+    }
+    .c-s-i img{
+        width: 220px;
+    }
+    .disenoUiUx-move{
+        top: -70px;
+    }
+    .disenoUiUx{
+    padding: 15px 30px 0 30px;
+    }
+    .tecnologias{
+        padding: 75px 30px; 
+    }
+    .preciosWeb{
+        padding: 75px 25px 50px 25px;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 1.8em;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .ux-class .ux-class_animate button{
+    padding: 10px 50px;
+    margin: 0;
+    font-size: 1em;
+}
+}
+@media only screen and (max-width: 320px) {
+    .caracteristicas h1{
+        font-size: 1.2em;
+    }
+    .caracteristicas .c-s-t, .caracteristicas .c-s-i{
+        padding: 5px;
+    }
+    .c-s-i img{
+        width: 150px;
+    }
+    .preciosWeb{
+        padding: 75px 15px 50px 15px;
+    }
+    .snip1517 .plan-title {
+        font-size: 1.3em;
+    }
+    .ux-class .ux-class_animate h2{
+        font-size: 1.2em;
+    }
+    .ux-class .ux-class_animate p{
+        font-size: 1em;
+        width: 220px;
+        margin-bottom: 15px;
+    }
+}
