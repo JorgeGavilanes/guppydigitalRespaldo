@@ -11,23 +11,11 @@ sr.reveal(".c-seccion2", {
     distance: '250px',
     delay: 200,
 });
-sr.reveal(".a1, .a4", {
+sr.reveal(".fwrap", {
     duration: 1500,
     origin: 'bottom',
     distance: '100px',
     delay: 200,
-});
-sr.reveal(".a2, .a5", {
-    duration: 1500,
-    origin: 'bottom',
-    distance: '100px',
-    delay: 400,
-});
-sr.reveal(".a3, .a6", {
-    duration: 1500,
-    origin: 'bottom',
-    distance: '100px',
-    delay: 600,
 });
 sr.reveal(".textoarticle", {
     duration: 3000,
