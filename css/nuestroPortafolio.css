@@ -23,25 +23,28 @@
 	flex-wrap: wrap;
 	margin-bottom: 15px;
 }
-.headerNP .categoriasNP a {
+.headerNP .categoriasNP button {
 	color: #9B9B9B;
 	margin: 10px 20px;
 	font-size: 18px;
 	font-weight: 400;
     text-decoration: none;
-    transition: all 300ms ease;
+	transition: all 300ms ease;
+	background-color: transparent;
+	outline: none;
+	border: none;
 }
-.headerNP .categoriasNP a p{
+.headerNP .categoriasNP button p{
 	font-size: 1em;
     color: #82919a;
     line-height: 1.3em;
 }
-.headerNP .categoriasNP a:focus p{
+.headerNP .categoriasNP button:hover{
     color: orange;
     transition: all 300ms ease;
 }
-.headerNP .categoriasNP a:hover p{
-    color: orange;
+div.categoriasNP button.active{
+	color: orange;
     transition: all 300ms ease;
 }
 /* ------------------------- */
@@ -49,31 +52,24 @@
 /* ------------------------- */
 .gridNP {
     background-color: #fff;
-	position: relative;
 	width: 100%;
-	opacity: 0;
 	transition: opacity 0.5s linear 1s;
+	display: flex;
+	flex-wrap: wrap;
 }
-.gridNP.imagenes-cargadas {
-	opacity: 1;
-}
-.gridNP .item {
-	position: absolute;
+.gridNP .itemBox {
 	display: block;
 	padding: 0;
 	margin: 10px;
 	width: calc(33.333333% - 20px);
 }
-.gridNP .item-contenido{
-	position: relative;
-}
-.gridNP .item img{
+.gridNP .itemBox img{
 	width: 100%;
 	cursor: pointer;
 	vertical-align: top;
     transition: all 300ms ease;
 }
-.gridNP .item img:hover{
+.gridNP .itemBox img:hover{
 	transform: translateY(-10px);
 }
 /* ------------------------- */
@@ -130,7 +126,7 @@
 /* Mediaqueries */
 /* ------------------------- */
 @media only screen and (max-width: 700px){
-    .gridNP .item {
+    .gridNP .itemBox {
         width: calc(50% - 20px);
     }
 }
@@ -141,7 +137,7 @@
     .gridNP{
         margin: auto;
     }
-    .gridNP .item {
+    .gridNP .itemBox {
         width: 100%;
         margin: 10px auto;
     }

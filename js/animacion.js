@@ -47,7 +47,7 @@ sr.reveal(".container-all", {
     distance: '-100px',
     delay: 500,
 });
-sr.reveal(".item, .contenedor-plan, .page-wrapper", {
+sr.reveal(".itemBox, .contenedor-plan, .page-wrapper", {
     duration: 1500,
     origin: 'bottom',
     distance: '100px',

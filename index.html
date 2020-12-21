@@ -11,7 +11,6 @@
         </script>
         <meta charset="UTF-8">
         <script src="https://kit.fontawesome.com/ae0079b958.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" type="0e5e1d3cf3184857f89a3669-text/javascript"></script>
         <script type="0e5e1d3cf3184857f89a3669-text/javascript">
         $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
@@ -180,80 +179,100 @@
 			    <div class="logoNP">
 				    <h2>PORTAFOLIO</h2>
 			    </div>
-			    <div class="categoriasNP" id="categoriasNP">
-				    <a href="#" class="activoNP"><p>Todos</p></a>
-				    <a href="#"><p>Sitios web</p></a>
-				    <a href="#"><p>Imagen corporativa</p></a>
-				    <a href="#"><p>Edición de videos</p></a>
-			    </div>
+			    <div class="categoriasNP">
+                    <button class="active">Todos</button>
+                    <button>Sitios web</button>
+                    <button>Imagen corporativa</button>
+                    <button>Edición de videos</button>
+                </div>
             </header>
 
-            <section class="gridNP" id="gridNP">
-			    <div class="item" 
+            <section class="gridNP">
+                <div class="itemBox" 
+				    data-categoria="sitios web"
+				    data-descripcion="Sitio web getCode_ !Hacemos tus tareas de programación¡.">
+				    <div class="item-contenido">
+					    <img src="media/src/getCode_.png" alt="getCode_ - GuppyDigital">
+				    </div>
+                </div>
+                <div class="itemBox"
+                    data-categoria="imagen corporativa"
+                    data-descripcion="Diseño banner FamilyGroup.">
+                    <div class="item-contenido">
+                        <img src="media/src/FamilyGroup.png" alt="FamilyGroup - GuppyDigital">
+                    </div>
+                </div>
+                <div class="itemBox"
+                    data-categoria="edición de videos"
+                    data-descripcion="Animación taza rota.">
+                    <div class="item-contenido">
+                        <img src="media/src/CupAnimation.gif" alt="Portafolio - GuppyDigital">
+                    </div>
+                </div>
+                <div class="itemBox" 
 				    data-categoria="sitios web"
 				    data-descripcion="Sitio web Catedral Metropolitana de Portoviejo JESÚS EL BUEN PASTOR.">
 				    <div class="item-contenido">
 					    <img src="media/src/CatedralDePortoviejo.png" alt="Catedral de Portoviejo - GuppyDigital">
 				    </div>
 			    </div>
-
-			    <div class="item"
-				    data-categoria="imagen corporativa"
-				    data-descripcion="Diseño banner FamilyGroup.">
-			    	<div class="item-contenido">
-					    <img src="media/src/FamilyGroup.png" alt="FamilyGroup - GuppyDigital">
-				    </div>
-			    </div>
-
-			    <div class="item"
-				    data-categoria="edición de videos"
-				    data-descripcion="Animación taza rota.">
-				    <div class="item-contenido">
-					    <img src="media/src/CupAnimation.gif" alt="Portafolio - GuppyDigital">
-				    </div>
-			    </div>
-            
-                <div class="item" 
+                <div class="itemBox"
+                    data-categoria="imagen corporativa"
+                    data-descripcion="Diseño de logo OverTime.">
+                    <div class="item-contenido">
+                        <img src="media/src/OverTime.png" alt="Overtime Portoviejo - GuppyDigital">
+                    </div>
+                </div>
+                <div class="itemBox" 
 				    data-categoria="sitios web"
 				    data-descripcion="Sitio web Señalización Celular, juego interactivo.">
 				    <div class="item-contenido">
 					    <img src="media/src/SenalizacionCelular.png" alt="Señalización calular - GuppyDigital">
 				    </div>
 			    </div>
-
-			    <div class="item"
-				    data-categoria="imagen corporativa"
-				    data-descripcion="Diseño de logo OverTime.">
-				    <div class="item-contenido">
-					    <img src="media/src/OverTime.png" alt="Overtime Portoviejo - GuppyDigital">
-				    </div>
-			    </div>
-
-			    <div class="item"
+			    <div class="itemBox"
 				    data-categoria="imagen corporativa"
 				    data-descripcion="Diseño de logo ArTeam.Dev.">
 				    <div class="item-contenido">
 					    <img src="media/src/ArTeam.dev.png" alt="ArTeam.Dev Argentina - GuppyDigital">
 				    </div>
+                </div>
+                <div class="itemBox" 
+				    data-categoria="sitios web"
+				    data-descripcion="Juego web de revelación de cartas MemoryGame.">
+				    <div class="item-contenido">
+					    <img src="media/src/MemoryGame.png" alt="MemoryGame - GuppyDigital">
+				    </div>
 			    </div>
-            
-                <div class="item"
+                <div class="itemBox"
 				    data-categoria="imagen corporativa"
 				    data-descripcion="Digitalización de logo colegial.">
 				    <div class="item-contenido">
 					    <img src="media/src/AI-Seniors.png" alt="Logo Portoviejo - GuppyDigital">
 				    </div>
+                </div>
+                <div class="itemBox" 
+				    data-categoria="sitios web"
+				    data-descripcion="Aplicación web bloc de notas online JavascriptNotes.">
+				    <div class="item-contenido">
+					    <img src="media/src/JavascriptNotes.png" alt="JavascriptNotes - GuppyDigital">
+				    </div>
 			    </div>
-            
-                <div class="item"
+                <div class="itemBox"
 				    data-categoria="imagen corporativa"
 				    data-descripcion="Diseño de logo SweetCake.">
 				    <div class="item-contenido">
 					    <img src="media/src/SweetCake.png" alt="SweetCake Guayaquil - GuppyDigital">
 				    </div>
+                </div>
+                <div class="itemBox" 
+				    data-categoria="sitios web"
+				    data-descripcion="Sitio web Cooperativa de transporte en taxis APOLO - Portoviejo.">
+				    <div class="item-contenido">
+					    <img src="media/src/APOLO.png" alt="APOLO - GuppyDigital">
+				    </div>
 			    </div>
-		    </section>
-
+            </section>
 		    <section class="overlay" id="overlay">
 			    <div class="contenedorNP-img">
 				    <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
@@ -313,8 +332,6 @@
             </div>
             </div>
         </footer>
-        <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-        <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
         <script src="js/nuestroPortafolio.js"></script>
         <script src="js/animacion.js"></script>
         <script src="js/slider.js"></script>
