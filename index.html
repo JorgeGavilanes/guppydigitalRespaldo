@@ -300,7 +300,7 @@
             <div class="ux-class_animate">
                 <h2>Experiencia de usuario</h2>
                 <p>Añadimos funciones a tu sitio web que mejoran la experiencia de usuario.</p>
-                <button type="button" class="btn btn-dark" onclick="cambiarModo()">Pulsa aquí</button>
+                <button type="button" class="btn btn-dark">Pulsa aquí</button>
             </div>
         </section>
         <footer>
@@ -350,18 +350,6 @@
         <script src="js/animacion.js"></script>
         <script src="js/slider.js"></script>
         <script src="js/script.js"></script>
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                let nav = document.querySelector("nav");
-                nav.classList.toggle("sticky", window.scrollY > 0);
-                })
-        </script>
-        <script type="text/javascript"> 
-            function cambiarModo() { 
-                let cuerpoweb = document.body;
-                cuerpoweb.classList.toggle("oscuro");
-            } 
-        </script>
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0e5e1d3cf3184857f89a3669-|49" defer=""></script>
     </body>
 </html>
