@@ -1,0 +1,79 @@
+/*
+___________________________________
+---------------------------------
+***HEADER***
+---------------------------------
+___________________________________
+*/
+.oscuro .caracteristicas{
+    background: #10527b;
+  }
+  .caracteristicas h1{
+    color: #fff;
+  }
+  .caracteristicas h2{
+    color: #F4F6F7;
+  }
+  .caracteristicas p{
+    color: #D0D3D4;
+  }
+  /*---------------------------------
+  ---------------------------------
+  ***SVG***
+  ---------------------------------
+  ---------------------------------*/
+  .oscuro .svg-img{
+    fill: #10527b;
+  }
+  /*_________________________________
+  ---------------------------------
+  ***SECTION1***
+  _________________________________
+  ---------------------------------*/
+  .oscuro .servicios{
+    background-color: #17202A;
+  }
+  .oscuro .seccionwrap{
+    background-color: #34495E;
+  }
+  .oscuro .seccionwrap:hover{
+    box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+  }
+  .oscuro .seccionwrap h2{
+    color: #F4F6F7;
+  }
+  .oscuro .seccionwrap p{
+    color: #D0D3D4;
+  }
+  /*_________________________________
+  ---------------------------------
+  ***PRECIOS WEB***
+  ---------------------------------
+  ___________________________________
+  */
+  .oscuro .preciosWeb{
+    background-color: #243445;
+  }
+  .oscuro .el-wrapper {
+    background-color: #17202A;
+    -webkit-box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+    -moz-box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+    box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+  }  
+  .oscuro .el-wrapper:hover{
+    -webkit-box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+    -moz-box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+    box-shadow: 0 0 35px rgba(40, 55, 71, 1);
+  }
+  .oscuro .info-inner .p-name {
+    color: #F4F6F7;
+  }
+  .oscuro .info-inner .p-company {
+    color: #D0D3D4;
+  }
+  .oscuro .a-size .size {
+    color: #F4F6F7;
+  }
+  .oscuro .cart .price {
+    color: #F4F6F7;
+  }
