@@ -47,3 +47,12 @@ window.addEventListener("scroll", function(){
     let nav = document.querySelector("nav");
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
+
+
+
+//preloader
+window.addEventListener("load", function(){
+    setTimeout(() => {
+        document.getElementById("preloader").style.display="none";
+    }, 1000);
+});
