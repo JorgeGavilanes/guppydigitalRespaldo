@@ -1,3 +1,11 @@
+.oscuro .loader-animation-container{
+    background-color: #000;
+    opacity: .9;
+}
+.oscuro .loader-animation > div{
+    background-color: #259ce2;
+}
+
 .loader-animation-container{
     height: 100vh;    
     display: flex;
@@ -32,13 +40,4 @@
 }
 .loader-animation > div:nth-child(3){
     animation-delay: .4s;
-}
-
-
-.oscuro .loader-animation-container{
-    background-color: #000;
-    opacity: .9;
-}
-.oscuro .loader-animation > div{
-    background-color: #259ce2;
 }
