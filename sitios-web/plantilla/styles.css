@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*-----------------------
+_________________________
+NAVBAR
+_________________________
+-----------------------*/
+nav{
+    height: 70px;
+    background: cadetblue;
+}
+.logo img{
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 5%;
+}
+.logo h1{
+    text-decoration: none;
+    position: absolute;
+    width: 200px;
+    top: 17px;
+    left: calc(5% + 55px);
+    color: beige;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 68px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    padding: 5px 0;
+    color: bisque;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: springgreen;
+}
+label #sign-one,
+label #sign-two{
+    font-size: 30px;
+    color: burlywood;
+    float: right;
+    line-height: 68px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#res-menu{
+    display: none;
+}
+
+/*-----------------------
+_________________________
+HEADER
+_________________________
+-----------------------*/
+.header{
+	height: 480px;
+	overflow:hidden;
+    position: relative;
+    background-color: #1b2631;
+}
+.header .slide{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index:1; 
+	display:none;
+	padding:0 15px;
+    animation: slide 2s ease;
+
+    background-image: url("https://image.freepik.com/foto-gratis/borrosa-resumen-antecedentes-vista-interior-mirando-fuera-vacio-vestibulo-oficina-puertas-entrada-pared-cortina-vidrio-marco_1339-6364.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header .slide:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #369dcd;
+    opacity: 0.5;
+    filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+.header .slide.active{
+	display: flex;
+}
+@keyframes slide{
+	0%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.container{
+	max-width: 1170px;
+    margin:auto;
+}
+.header .container{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+.header .caption, .header .doctor{
+    width:50%;
+    margin: auto;
+}
+.header .caption h2{
+	font-size:42px;
+	color:#cc6c1d;
+}
+.header .slide.active .caption h2{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1s;
+}
+.header .caption p{
+    color:#25b541;
+    margin-bottom: 25px;
+}
+.header .slide.active .caption p{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1.2s;
+}
+.header .caption .iconos{
+    display: flex;
+    margin: 35px 0;
+    width: 100%;
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay: 1.5s;
+}
+.header .caption .iconos i{
+    font-size: 18px;
+    border-radius: 50%;
+    border: solid 1px springgreen;
+    padding: 15px;
+    margin-right: 15px;
+}
+.header .caption .iconos .iconoA{
+    background-color: springgreen;
+}
+.header .caption a{
+    display: inline-block;
+    padding: 10px 25px;
+    border: solid 1px #25b541;
+    text-decoration: none;
+    color:#ffffff;
+    transition: all 300ms ease;
+    border-radius: 8px;
+}
+.header .caption a:hover{
+    background-color: springgreen;
+}
+.header .slide.active .caption a{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1.4s;
+}
+@keyframes captionText{
+	0%{
+		opacity:0; transform: translateX(-100px);
+	}
+	100%{
+	 opacity:1; transform: translateX(0px);	
+	}
+}
+.header .controls .prev,
+.header .controls .next{
+    display: none;
+}
+.header .indicator{
+	position: absolute;
+	left:50%;
+	bottom:30px;
+	z-index: 2;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.header .indicator div{
+	display: inline-block;
+    margin:0 8px;
+	width: 15px;
+	height: 15px;
+    text-align: center;
+    border-radius:50%;
+    background-color: cadetblue;
+}
+.header .indicator div.active{
+    border: solid 1px yellowgreen;
+    background-color: transparent;
+}
+.header .doctor{
+    height: 480px;
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header .doctor img{
+    height: 480px;
+    margin: auto;
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*-----------------------
+_________________________
+SERVICIOS
+_________________________
+-----------------------*/
+.servicios{
+    padding: 75px 5%;
+    background-color: rgb(36, 1, 1);
+}
+.serviciosT{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.serviciosT h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.serviciosT p{
+    line-height: 35px;
+    width: 90%;
+    margin: auto;
+}
+.serviciosL{
+    display: flex;
+    flex-wrap: wrap;
+}
+.serviciosL .serviciosModal{
+    background-color: turquoise;
+    width: calc(25% - 6px);
+    margin: 0 3px;
+    height: 300px;
+    justify-content: space-between;
+    position: sticky;
+    text-align: center;
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.serviciosL .serviciosModal:nth-child(2n){
+    transform: translateY(25px);
+}
+.serviciosModal:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #369dcd;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.serviciosModal:hover{
+    transform: translateY(-15px);
+}
+.flexsM{
+    margin: auto;
+    display: block;
+    transition: all 300ms ease;
+}
+.serviciosModal .flexsM h2{
+    font-size: 42px;
+}
+.serviciosModal .flexsM p{
+    display: none;
+    width: 90%;
+    line-height: 25px;
+    margin: auto;
+    transition: all 300ms ease;
+}
+.serviciosModal:hover > .flexsM h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.serviciosModal:hover > .flexsM p{
+    display: block;
+}
+.serviciosModal:nth-child(2n):hover{
+    transform: translateY(10px);
+}
+.serviciosL .sM1{
+    background-image: url("https://image.freepik.com/foto-gratis/mujer-electrodos-sosteniendo-figurita-corazon_23-2147934621.jpg");
+}
+.serviciosL .sM2{
+    background-image: url("https://image.freepik.com/foto-gratis/doctor-joven-hermoso-lleva-mascara-mientras-que-sostiene-medicina-guantes-goma-pared-gris_1150-21804.jpg");
+    background-position: center right;
+}
+.serviciosL .sM3{
+    background-image: url("https://image.freepik.com/foto-gratis/doctor-pone-vacuna-jeringa_230497-1652.jpg");
+    background-position: center left;
+}
+.serviciosL .sM4{
+    background-image: url("https://image.freepik.com/foto-gratis/doctor-infantil-escuchando-frecuencia-cardiaca-lindo-bebe-recien-nacido-acostado-cama-usando-estetoscopio_78212-195.jpg");
+    background-position: bottom center;
+}
+/*-----------------------
+_________________________
+NOSOTROS
+_________________________
+-----------------------*/
+.nosotros{
+    padding: 75px 5%;
+}
+.nosotros h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.nosotrosmain{
+    display: flex;
+    width: 100%;
+}
+.nosotrosT{
+    width: 50%;
+}
+.nosotrosT p{
+    line-height: 35px;
+    text-align:justify;
+	text-justify:inter-word;
+}
+.nosotrosT a{
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 25px;
+    border: solid 1px #25b541;
+    text-decoration: none;
+    color:#ffffff;
+    transition: all 300ms ease;
+    border-radius: 8px;
+}
+.nosotrosT a:hover{
+    background-color: springgreen;
+}
+.cuadroIconos{
+    margin: auto;
+}
+.cuadroIconos .cImain{
+    display: flex;
+    padding: 20px 35px;
+    align-items: center;
+}
+.cI1{
+    background-color: #72cffa;
+}
+.cI2{
+    background-color: #55beef;
+}
+.cI3{
+    background-color: #47b0e1;
+}
+.cI4{
+    background-color: #369dcd;
+}
+.cuadroIconos .cImain i{
+    font-size: 18px;
+    margin-right: 35px;
+}
+.cuadroIconos .cImain p{
+    font-size: 18px;
+    margin-right: 15px;
+}
+.cuadroIconos .cImain .cIhora{
+    margin-left: auto;
+}
+
+/*-----------------------
+_________________________
+TESTIMONIOS
+_________________________
+-----------------------*/
+.testimonios{
+    padding: 75px 5%;
+    text-align: center;
+    background-color: rgb(47, 70, 2);
+}
+.testimonios h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.swiper-container {
+    width: 100%;
+    height: calc(250px + 80px);
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide:hover{
+    cursor: pointer;
+}
+.swiper-slide img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    z-index: 99;
+}
+.s-sBox{
+    text-align:justify;
+    text-justify:inter-word;
+    background-color: #fff;
+    height: 250px;
+    display: flex;
+}
+.s-sBoxT{
+    align-items: center;
+    padding: 0 35px;
+    margin: auto;
+}
+.s-sBoxT h3{
+    margin-bottom: 15px;
+    color: violet;
+}
+
+/*-----------------------
+_________________________
+CONTÁCTENOS
+_________________________
+-----------------------*/
+.contactenos{
+    padding: 75px 5%;
+}
+.contactenosBox{
+    display: flex;
+}
+.contactenosBox .mapsForm, .contactenosBox .formulario{
+    width: 50%;
+}
+.contactenosBox .mapsForm{
+    display: flex;
+}
+.contactenosBox .mapsForm iframe{
+    width: 80%;
+    margin: auto;
+}
+.contactenosBox .formulario h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+.contactenosBox .formulario p{
+    width: 90%;
+    line-height: 35px;
+    text-align:justify;
+    text-justify:inter-word;
+    margin-bottom: 15px;
+}
+.contactenosBox .formulario form{
+    display: block;
+    width: 90%;
+}
+form #userName, form #userPhone, form #userMail, form textarea{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    width: 70%;
+    height: 35px;
+    margin-bottom: 12px;
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+}
+form #textarea{
+    resize: none;
+    height: 200px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+form #userName:focus, form #userPhone:focus, form #userMail:focus, form textarea:focus{
+    /*-webkit-box-shadow: 0px 0px 8px 1px springgreen;
+    -moz-box-shadow: 0px 0px 8px 1px springgreen;
+    box-shadow: 0px 0px 8px 1px springgreen;*/
+    background-color: transparent;
+    border-bottom: solid 1px springgreen;
+}
+form #button{
+    display: inline-block;
+    padding: 10px 25px;
+    border: solid 1px #25b541;
+    text-decoration: none;
+    color:#ffffff;
+    transition: all 300ms ease;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+form #button:hover{
+    background-color: springgreen;
+}
+
+/*-----------------------
+_________________________
+FOOTER
+_________________________
+-----------------------*/
+.footer{
+    padding: 75px 5% 20px 5%;
+    background-color: teal;
+}
+.footer .footerR, .footer .copyright{
+    display: flex;
+}
+.footer .footerR{
+    justify-content: space-between;
+}
+.logoF{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+.logoF img{
+    width: 75px;
+}
+.logoF h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer .footerR ul{
+    list-style: none;
+    color: #fff;
+}
+.footer .footerR ul li{
+    line-height: 35px;
+}
+.footer .footerR ul li h3{
+    margin-bottom: 10px;
+}
+.footer .footerR ul li i{
+    margin-right: 15px;
+    font-size: 18px;
+}
+.footer .footerR ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 100ms ease;
+}
+.footer .footerR ul li a:hover{
+    color: springgreen;
+}
+.footer .copyright p{
+    margin: 75px auto 0 auto;
+    padding: 20px 50px 0 50px;
+    border-top: solid 1px #fff;
+}
+.footer .copyright p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.footer .copyright p a:hover{
+    color: rgb(3, 117, 159);
+    letter-spacing: 3px;
+}
+
+/*-----------------------
+_________________________
+RESPONSIVE
+_________________________
+-----------------------*/
+@media screen and (max-width: 800px){
+    nav ul li{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    label #sign-one{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: darkolivegreen;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #res-menu:checked ~ ul{
+        left: 0;
+    }
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+}
