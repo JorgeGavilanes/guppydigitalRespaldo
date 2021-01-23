@@ -17,6 +17,11 @@ _________________________
 nav{
     height: 70px;
     background: cadetblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
 }
 .logo img{
     width: 50px;
@@ -76,6 +81,7 @@ _________________________
 	overflow:hidden;
     position: relative;
     background-color: #1b2631;
+    transform: translateY(70px);
 }
 .header .slide{
 	position: absolute;
@@ -234,7 +240,7 @@ SERVICIOS
 _________________________
 -----------------------*/
 .servicios{
-    padding: 75px 5%;
+    padding: calc(75px + 70px) 5% 75px 5%;
     background-color: rgb(36, 1, 1);
 }
 .serviciosT{
@@ -251,6 +257,8 @@ _________________________
     line-height: 35px;
     width: 90%;
     margin: auto;
+    text-align:justify;
+	text-justify:inter-word;
 }
 .serviciosL{
     display: flex;
@@ -303,6 +311,8 @@ _________________________
     line-height: 25px;
     margin: auto;
     transition: all 300ms ease;
+    text-align:justify;
+	text-justify:inter-word;
 }
 .serviciosModal:hover > .flexsM h2{
     font-size: 30px;
@@ -479,6 +489,9 @@ _________________________
 .contactenosBox .mapsForm{
     display: flex;
 }
+.contactenosBox #mFR{
+    display: none;
+}
 .contactenosBox .mapsForm iframe{
     width: 80%;
     margin: auto;
@@ -609,9 +622,115 @@ _________________________
 RESPONSIVE
 _________________________
 -----------------------*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1320px){
+    .serviciosModal .flexsM h2{
+        font-size: 32px;
+    }
+    .serviciosModal:hover > .flexsM h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .serviciosL{
+        justify-content: center;
+    }
+    .serviciosL .serviciosModal{
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        align-content: space-between;
+        padding: 15px;
+    }
+    .serviciosL .serviciosModal:nth-child(2n){
+        transform: translateY(0);
+    }
+    .serviciosModal:nth-child(2n):hover{
+        transform: translateY(-15px);
+    }
+    .serviciosModal .flexsM p{
+        line-height: 25px;
+    }
+    .serviciosModal:hover > .flexsM h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .nosotrosT{
+        width: 50%;
+        margin-right: 25px;
+    }
+    .cuadroIconos .cImain{
+        padding: 20px;
+    }
+    .cuadroIconos .cImain i{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 880px){
+    .nosotrosmain{
+        display: block;
+    }
+    .nosotrosT{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .cuadroIconos .cImain{
+        width: 90%;
+        margin: auto;
+    }
+    .contactenosBox{
+        display: block;
+    }
+    .contactenosBox .mapsForm, .contactenosBox .formulario{
+        width: 100%;
+    }
+    .contactenosBox .mapsForm{
+        display: flex;
+        text-align: center;
+    }
+    #formR{
+        margin-bottom: 35px !important;
+        margin: auto;
+        justify-content: center;
+    }
+    #formR p{
+       padding-right: 35px;
+       line-height: 50px;
+    }
+    #formR form{
+        width: 100%;
+    }
+    #formR form #userName, 
+    #formR form #userPhone, 
+    #formR form #userMail, 
+    #formR form textarea{
+        width: 100%;
+    }
+    .contactenosBox #mFnR{
+        display: none;
+    }
+    .contactenosBox #mFR{
+        display: block;
+    }
+    #formR{
+        display: flex;
+    }
+}
+@media screen and (max-width: 780px){
     nav ul li{
-        margin: 0 10px;
+        margin: 0 8px;
+    }
+    .header .caption h2{
+        font-size:32px;
+    }
+    .header .caption .iconos i{
+        padding: 12px;
+    }
+    .footer #navegacionfooter{
+        display: none;
+    }
+    .footer .copyright p{
+        margin: 50px auto 0 auto;
     }
 }
 @media screen and (max-width: 700px){
@@ -646,4 +765,22 @@ _________________________
     #res-menu:checked ~ label #sign-two{
         display: block;
     }
+    .footer .footerR .logoF h1{
+        display: none;
+    }
+    .footer .footerR ul li #footerfollowers{
+        display: none;
+    }
+    .footer .footerR ul li a .fab{
+        margin-top: 25px;
+    }
+    .footer .footerR ul li a p{
+        display: none;
+    }
+}
+@media screen and (max-width: 460px){
+
+}
+@media screen and (max-width: 320px){
+
 }
