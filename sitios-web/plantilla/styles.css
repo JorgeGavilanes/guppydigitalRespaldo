@@ -16,7 +16,7 @@ _________________________
 -----------------------*/
 nav{
     height: 70px;
-    background: cadetblue;
+    background: #F2F3F4;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ nav{
     width: 200px;
     top: 17px;
     left: calc(5% + 55px);
-    color: beige;
+    color: #3498DB;
     text-transform: uppercase;
 }
 nav ul{
@@ -51,16 +51,16 @@ nav ul li{
 nav ul li a{
     position: relative;
     padding: 5px 0;
-    color: bisque;
+    color: #fff;
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: springgreen;
+    letter-spacing: 3px;
 }
 label #sign-one,
 label #sign-two{
     font-size: 30px;
-    color: burlywood;
+    color: #3498DB;
     float: right;
     line-height: 68px;
     margin-right: 30px;
@@ -137,7 +137,7 @@ _________________________
 }
 .header .caption h2{
 	font-size:42px;
-	color:#cc6c1d;
+    color: #045d97;
 }
 .header .slide.active .caption h2{
 	opacity:0;
@@ -145,7 +145,7 @@ _________________________
 	animation-delay:1s;
 }
 .header .caption p{
-    color:#25b541;
+    color:#fff;
     margin-bottom: 25px;
 }
 .header .slide.active .caption p{
@@ -164,24 +164,27 @@ _________________________
 .header .caption .iconos i{
     font-size: 18px;
     border-radius: 50%;
-    border: solid 1px springgreen;
+    border: solid 1px #fff;
+    color: #fff;
     padding: 15px;
     margin-right: 15px;
 }
 .header .caption .iconos .iconoA{
-    background-color: springgreen;
+    background-color: #fff;
+    color: #3498DB;
 }
 .header .caption a{
     display: inline-block;
     padding: 10px 25px;
-    border: solid 1px #25b541;
+    border: solid 1px #fff;
     text-decoration: none;
-    color:#ffffff;
+    color:#fff;
     transition: all 300ms ease;
     border-radius: 8px;
 }
 .header .caption a:hover{
-    background-color: springgreen;
+    background-color: #fff;
+    color: #3498DB;
 }
 .header .slide.active .caption a{
 	opacity:0;
@@ -215,10 +218,10 @@ _________________________
 	height: 15px;
     text-align: center;
     border-radius:50%;
-    background-color: cadetblue;
+    background-color: #fff;
 }
 .header .indicator div.active{
-    border: solid 1px yellowgreen;
+    border: solid 1px #fff;
     background-color: transparent;
 }
 .header .doctor{
@@ -241,7 +244,7 @@ _________________________
 -----------------------*/
 .servicios{
     padding: calc(75px + 70px) 5% 75px 5%;
-    background-color: rgb(36, 1, 1);
+    background-color: #f2f3f4;
 }
 .serviciosT{
     margin: auto;
@@ -252,6 +255,7 @@ _________________________
 .serviciosT h2{
     font-size: 42px;
     margin-bottom: 20px;
+    color: #17202A;
 }
 .serviciosT p{
     line-height: 35px;
@@ -296,6 +300,9 @@ _________________________
 }
 .serviciosModal:hover{
     transform: translateY(-15px);
+    -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
 }
 .flexsM{
     margin: auto;
@@ -304,6 +311,7 @@ _________________________
 }
 .serviciosModal .flexsM h2{
     font-size: 42px;
+    color: #fff;
 }
 .serviciosModal .flexsM p{
     display: none;
@@ -312,7 +320,8 @@ _________________________
     margin: auto;
     transition: all 300ms ease;
     text-align:justify;
-	text-justify:inter-word;
+    text-justify:inter-word;
+    color: #fff;
 }
 .serviciosModal:hover > .flexsM h2{
     font-size: 30px;
@@ -346,10 +355,12 @@ _________________________
 -----------------------*/
 .nosotros{
     padding: 75px 5%;
+    background-color: #FDFEFE;
 }
 .nosotros h2{
     font-size: 42px;
     margin-bottom: 20px;
+    color: #17202A;
 }
 .nosotrosmain{
     display: flex;
@@ -367,14 +378,15 @@ _________________________
     margin-top: 15px;
     display: inline-block;
     padding: 10px 25px;
-    border: solid 1px #25b541;
+    border: solid 1px #3498DB;
     text-decoration: none;
-    color:#ffffff;
+    color:#3498DB;
     transition: all 300ms ease;
     border-radius: 8px;
 }
 .nosotrosT a:hover{
-    background-color: springgreen;
+    background-color: #3498DB;
+    color: #fff;
 }
 .cuadroIconos{
     margin: auto;
@@ -399,10 +411,12 @@ _________________________
 .cuadroIconos .cImain i{
     font-size: 18px;
     margin-right: 35px;
+    color: #fff;
 }
 .cuadroIconos .cImain p{
     font-size: 18px;
     margin-right: 15px;
+    color: #fff;
 }
 .cuadroIconos .cImain .cIhora{
     margin-left: auto;
@@ -416,11 +430,12 @@ _________________________
 .testimonios{
     padding: 75px 5%;
     text-align: center;
-    background-color: rgb(47, 70, 2);
+    background-color: #F2F3F4;
 }
 .testimonios h2{
     font-size: 42px;
     margin-bottom: 20px;
+    color: #17202A;
 }
 .swiper-container {
     width: 100%;
@@ -469,7 +484,10 @@ _________________________
 }
 .s-sBoxT h3{
     margin-bottom: 15px;
-    color: violet;
+    color: #3498DB;
+}
+.swiper-pagination{
+    display: none;
 }
 
 /*-----------------------
@@ -483,7 +501,8 @@ _________________________
 .contactenosBox{
     display: flex;
 }
-.contactenosBox .mapsForm, .contactenosBox .formulario{
+.contactenosBox .mapsForm, 
+.contactenosBox .formulario{
     width: 50%;
 }
 .contactenosBox .mapsForm{
@@ -499,6 +518,7 @@ _________________________
 .contactenosBox .formulario h2{
     font-size: 42px;
     margin-bottom: 20px;
+    color: #17202A;
 }
 .contactenosBox .formulario p{
     width: 90%;
@@ -511,7 +531,10 @@ _________________________
     display: block;
     width: 90%;
 }
-form #userName, form #userPhone, form #userMail, form textarea{
+form #userName, 
+form #userPhone, 
+form #userMail, 
+form textarea{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     width: 70%;
@@ -520,6 +543,7 @@ form #userName, form #userPhone, form #userMail, form textarea{
     padding: 5px 15px;
     outline: none;
     border: none;
+    background-color: rgba(248,249,249,0.90);
 }
 form #textarea{
     resize: none;
@@ -527,19 +551,22 @@ form #textarea{
     margin-bottom: 0;
     overflow: hidden;
 }
-form #userName:focus, form #userPhone:focus, form #userMail:focus, form textarea:focus{
+form #userName:focus, 
+form #userPhone:focus, 
+form #userMail:focus, 
+form textarea:focus{
     /*-webkit-box-shadow: 0px 0px 8px 1px springgreen;
     -moz-box-shadow: 0px 0px 8px 1px springgreen;
     box-shadow: 0px 0px 8px 1px springgreen;*/
-    background-color: transparent;
-    border-bottom: solid 1px springgreen;
+    background-color: #F8f9f9;
+    border-bottom: solid 1px #3498DB;
 }
 form #button{
     display: inline-block;
     padding: 10px 25px;
-    border: solid 1px #25b541;
+    border: solid 1px #3498DB;
     text-decoration: none;
-    color:#ffffff;
+    color:#3498DB;
     transition: all 300ms ease;
     border-radius: 8px;
     outline: none;
@@ -548,7 +575,8 @@ form #button{
     font-size: 16px;
 }
 form #button:hover{
-    background-color: springgreen;
+    background-color: #3498DB;
+    color: #fff;
 }
 
 /*-----------------------
@@ -558,7 +586,7 @@ _________________________
 -----------------------*/
 .footer{
     padding: 75px 5% 20px 5%;
-    background-color: teal;
+    background-color: #f2f3f4;
 }
 .footer .footerR, .footer .copyright{
     display: flex;
@@ -575,12 +603,12 @@ _________________________
     width: 75px;
 }
 .logoF h1{
-    color: #fff;
+    color: #3498DB;
     text-transform: uppercase;
 }
 .footer .footerR ul{
     list-style: none;
-    color: #fff;
+    color: #3498DB;
 }
 .footer .footerR ul li{
     line-height: 35px;
@@ -591,25 +619,30 @@ _________________________
 .footer .footerR ul li i{
     margin-right: 15px;
     font-size: 18px;
+    color: #3498DB;
 }
 .footer .footerR ul li a{
-    color: #fff;
+    color: #3498DB;
     text-decoration: none;
     display: flex;
     align-items: center;
     transition: all 100ms ease;
 }
 .footer .footerR ul li a:hover{
-    color: springgreen;
+    color: #1B4F72;
+}
+.footer .footerR ul li a:hover i{
+    color: #1B4F72;
 }
 .footer .copyright p{
     margin: 75px auto 0 auto;
     padding: 20px 50px 0 50px;
-    border-top: solid 1px #fff;
+    border-top: solid 1px #3498DB;
+    color: #17202A;
 }
 .footer .copyright p a{
     text-decoration: none;
-    color: #fff;
+    color: #3498DB;
     font-weight: bold;
 }
 .footer .copyright p a:hover{
@@ -741,7 +774,7 @@ _________________________
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: darkolivegreen;
+        background-color: #1B4F72;
         top: 70px;
         left: -100%;
         text-align: center;
@@ -765,6 +798,38 @@ _________________________
     #res-menu:checked ~ label #sign-two{
         display: block;
     }
+    .header .caption{
+        width:100%;
+        margin-left: 30px;
+    }
+    .header .doctor{
+        display: none;
+    }
+    .header .caption h2{
+        font-size:46px;
+    }
+    .header .caption p{
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .header .caption .iconos{
+        margin: 35px 0;
+    }
+    .header .caption .iconos i{
+        font-size: 18px;
+        padding: 18px;
+    }
+    #mFR iframe{
+        width: 100%;
+    }
+    #formR{
+        display: block;
+    }
+    #formR p{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
     .footer .footerR .logoF h1{
         display: none;
     }
@@ -778,9 +843,81 @@ _________________________
         display: none;
     }
 }
+@media screen and (max-width: 540px){
+    .header .caption h2{
+        font-size:30px;
+    }
+    .header .caption .iconos i{
+        padding: 12px;
+    }
+    .footer{
+        padding: 75px 5%;
+    }
+    .copyright p{
+        display: none;
+    }
+}
 @media screen and (max-width: 460px){
-
+    .header .caption{
+        margin-left: 5px;
+    }
+    .cuadroIconos .cImain i, 
+    .cuadroIconos .cImain p{
+        margin-right: auto;
+    }
+    .cuadroIconos .cImain .cIhora{
+        display: none;
+    }
+    .serviciosT h2, 
+    .nosotros h2, 
+    .testimonios h2, 
+    .contactenosBox .formulario h2{
+        font-size: 30px;
+    }
+    .footer .footerR{
+        display: block;
+    }
+    .footer .footerR .logoF{
+        margin-bottom: 75px;
+    }
+    .footerR .logoF img{
+        margin-left: auto;
+    }
+    .footer .footerR .logoF h1{
+        display: block;
+        margin-right: auto;
+    }
+    .footer .footerR ul{
+        text-align: center;
+    }
+    .footer .footerR ul h3{
+        font-size: 24px;
+    }
+    .footer .footerR #direccionF li{
+        margin-bottom: 15px;
+    }
+    .footer .footerR #direccionF li i{
+        width: 100%;
+        font-size: 22px;
+        margin: 0 auto;
+    }
+    .footer .footerR #socialMediaF{
+        display: flex;
+    }
+    .footer .footerR #socialMediaF li{
+        margin: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer .footerR #socialMediaF li a i{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 320px){
-
+    .serviciosT h2, 
+    .nosotros h2, 
+    .testimonios h2, 
+    .contactenosBox .formulario h2{
+        font-size: 28px;
+    }
 }
