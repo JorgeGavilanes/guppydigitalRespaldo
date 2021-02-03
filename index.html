@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-94HLY8VGZ2"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -48,6 +49,7 @@
         <title>GUPPYDIGITAL.COM | SITIOS WEB, IMAGEN CORPORATIVA Y EDICIÓN DE VIDEOS</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Oswald&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="icon/favicon.png">
+        <link rel="stylesheet" href="css/catalogo.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/oscuro.css">
@@ -141,6 +143,75 @@
             </div>
             <div class="indicator"></div>
         </header>
+        <section class="catalogo">
+            <h2>CATÁLOGO</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Personal_wa-catalogo.png" alt="">
+                      <h3>Sitio web PERSONAL</h3>
+                      <a href="sitios-web.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Estandar_wa-catalogo.png" alt="">
+                      <h3>Sitio web ESTÁNDAR</h3>
+                      <a href="sitios-web.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Empresarial_wa-catalogo.png" alt="">
+                      <h3>Sitio web EMPRESARIAL</h3>
+                      <a href="sitios-web.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/E-Commerce_wa-catalogo.png" alt="">
+                      <h3>Sitio web E-COMMERCE</h3>
+                      <a href="sitios-web.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Médico One-Page.png" alt="">
+                      <h3>Sitio web MÉDICO ONE-PAGE</h3>
+                      <a href="https://wa.me/p/3878003462291428/593984795971" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Médico (Agendamiento de citas e historial médico).png" alt="">
+                      <h3>Sitio web MÉDICO CITAS</h3>
+                      <a href="https://wa.me/p/3395970040440843/593984795971" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Post de redes sociales_wa-catalogo.png" alt="">
+                      <h3>Post de REDES SOCIALES</h3>
+                      <a href="imagen-corporativa.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Banners, tarjetas o logos_wa-catalogo.png" alt="">
+                      <h3>Banners, tarjetas o logos</h3>
+                      <a href="imagen-corporativa.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Identidad corporativa_wa-catalogo.png" alt="">
+                      <h3>Identidad CORPORATIVA</h3>
+                      <a href="imagen-corporativa.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Animacion de iconos_wa-catalogo.png" alt="">
+                      <h3>Animación de ÍCONOS</h3>
+                      <a href="edicion-de-video.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Animacion de logos_wa-catalogo.png" alt="">
+                      <h3>Animación de LOGOS</h3>
+                      <a href="edicion-de-video.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="media/catalogo/Edicion de videos_wa-catalogo.png" alt="">
+                      <h3>Edición de VIDEOS</h3>
+                      <a href="edicion-de-video.html#CATALOGO" target="_blank">Ver más...</a>
+                  </div>
+                </div>
+                <!--<div class="swiper-pagination"></div>-->
+            </div>
+            <a class="btn-descarga" href="GUPPYDIGITAL-CATALOGO.pdf" download="GUPPYDIGITAL-CATALOGO.pdf">Descargar catálogo</a>
+        </section>
         <a id="servicios"></a>
         <section class="servicios">
             <div class="contentarticle">
@@ -354,6 +425,34 @@
             </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            let swiper = new Swiper('.swiper-container', {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              breakpoints: {
+                  710: {
+                      slidesPerView: 2,
+                  },
+                  1020: {
+                      slidesPerView: 3,
+                  },
+                  1330: {
+                      slidesPerView: 4,
+                  },
+              },
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            }
+            });
+        </script>
         <script src="js/nuestroPortafolio.js"></script>
         <script src="js/animacion.js"></script>
         <script src="js/slider.js"></script>

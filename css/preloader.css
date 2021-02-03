@@ -22,9 +22,9 @@
     margin: 0 auto;
 }
 .loader-animation > div{
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: 3rem .5rem;
+    width: 24px;
+    height: 24px;
+    margin: 48px 8px;
     border-radius: 50%;
     background-color: #003c5f;
     animation: loader-animation .6s infinite alternate;

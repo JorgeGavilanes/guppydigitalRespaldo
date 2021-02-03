@@ -120,7 +120,7 @@ _________________________________
     }
     .guppycopyright-t, .guppycopyright-e{
         width: 250px;
-        line-height: 1.5em;
+        line-height: 24px;
     }
 }
 @media only screen and (max-width: 600px) {

@@ -2,6 +2,7 @@
 	box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
 	margin:0;
@@ -79,7 +80,7 @@ _________________________________
     width: 350px;
 }
 .home .caption h1{
-	font-size: 3em;
+	font-size: 48px;
 	color:#fff;
 	margin:0;
 	
@@ -90,10 +91,9 @@ _________________________________
 	animation-delay:.3s;
 }
 .home .caption p{
-	font-size: 1.5em;
+	font-size: 23px;
 	margin:15px 0 30px;
 	color:#fff;
-    font-weight: 100;
     line-height: 175%;
 }
 .home .slide.active .caption p{
@@ -117,7 +117,7 @@ _________________________________
     color:#fff;
     width: 200px;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 20px;
     padding: 10px;
     font-weight: 100;
     height: 50px;
@@ -141,7 +141,7 @@ _________________________________
     background-color: #fff;
 }
 .home .enlaces .aexplorar:hover, .home .enlaces .amservicios:hover{
-    font-size: 1.5em;
+    font-size: 23px;
     font-weight: 500;
 }
 .home .enlaces .amservicios{
@@ -226,15 +226,15 @@ _________________________________
     margin-bottom: 50px;
 }
 .textoarticle h2{
-    font-size: 3em;
+    font-size: 48px;
     color: #576975;
-    line-height: 1.5em;
+    line-height: 72px;
     font-weight: 700;
 }
 .textoarticle p{
-    font-size: 1.5em;
+    font-size: 23px;
     color: #82919a;
-    line-height: 1.5em;
+    line-height: 35px;
 }
 .fwrap{
     flex-wrap: wrap;
@@ -267,7 +267,7 @@ _________________________________
 }
 .seccionwrap p{
     color: #82919a;
-    line-height: 2em;
+    line-height: 35px;
     padding: 10px;
 }
 /*_________________________________
@@ -294,12 +294,12 @@ _________________________________
     margin: auto;
 }
 .ux-class .ux-class_animate h2{
-    font-size: 3em;
+    font-size: 48px;
 }
 .ux-class .ux-class_animate p{
-    font-size: 1.5em;
+    font-size: 23px;
 	color:#fff;
-    line-height: 175%;
+    line-height: 35px;
     width: 525px;
 }
 .ux-class .ux-class_animate button{
@@ -312,7 +312,7 @@ _________________________________
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 20px;
     outline: none;
     cursor: pointer;
     transition: all 300ms ease;
@@ -334,11 +334,11 @@ _________________________________
         width: 275px;
     }
     .home .caption h1{
-	    font-size: 2.5em;
+	    font-size: 40px;
         margin-left: 15px;
     }
     .home .caption p{
-	    font-size: 1.3em;
+	    font-size: 20.8px;
         margin-left: 15px;
     }
     .home .controls .prev, .home .controls .next{
@@ -351,14 +351,14 @@ _________________________________
         margin-bottom: 30px;
     }
     .textoarticle h2{
-        font-size: 3em;
+        font-size: 40px;
         color: #576975;
-        line-height: 1.5em;
+        line-height: 60px;
         font-weight: 700;
     }
     .textoarticle p{
-        font-size: 1.3em;
-        line-height: 2em;
+        font-size: 20.8px;
+        line-height: 31px;
     }
     .seccionwrap{
         padding: 25px 30px;
@@ -368,18 +368,18 @@ _________________________________
         padding: 15px 0 10px 0;
     }
     .seccionwrap h2{
-        font-size: 1.3em;
+        font-size: 40px;
     }
     .seccionwrap p{
-        line-height: 2em;
+        line-height: 31px;
         padding: 10px 0;
     }
     .ux-class .ux-class_animate h2{
-        font-size: 2.5em;
+        font-size: 40px;
         margin-bottom: 15px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1.2em;
+        font-size: 31px;
         margin-bottom: 15px;
     }
 }
@@ -393,20 +393,20 @@ _________________________________
     .home .enlaces a{
         position: relative;
         top: 15px;
-        font-size: 1.2em;
+        font-size: 19px;
         margin: 0 30px;
     }
     .home .enlaces .aexplorar:hover, .home .enlaces .amservicios:hover{
-        font-size: 1.3em;
+        font-size: 20px;
     }
     .home .captionright img{
         width: 275px;
     }
     .home .caption h1{
-	font-size: 2.3em;
+	font-size: 36px;
     }
     .home .caption p{
-	    font-size: 1em;
+	    font-size: 16px;
     }
     .servicios{
         padding: 50px 35px;
@@ -415,11 +415,11 @@ _________________________________
         margin-bottom: 15px;
     }
     .textoarticle h2{
-        font-size: 2.8em;
+        font-size: 36px;
     }
     .textoarticle p{
-        font-size: 1em;
-        line-height: 2em;
+        font-size: 16px;
+        line-height: 32px;
     }
     .seccionwrap{
         width: 45%;
@@ -429,25 +429,25 @@ _________________________________
         padding: 15px 0 10px 0;
     }
     .seccionwrap h2{
-        font-size: 1.3em;
+        font-size: 32px;
     }
     .seccionwrap p{
-        line-height: 2em;
+        line-height: 32px;
         padding: 5px 0;
     }
     .ux-class .ux-class_animate h2{
-        font-size: 2em;
+        font-size: 32px;
         margin-bottom: 15px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1em;
+        font-size: 16px;
         width: 500px;
         margin-bottom: 10px;
     }
     .ux-class .ux-class_animate button{
         padding: 10px 50px;
         margin: 0;
-        font-size: 1em;
+        font-size: 16px;
     }
     .ux-class .ux-class_animate button:hover{
         padding: 10px 50px;
@@ -462,11 +462,11 @@ _________________________________
         margin-bottom: 15px;
     }
     .textoarticle h2{
-        font-size: 2.8em;
+        font-size: 44px;
     }
     .textoarticle p{
-        font-size: 1em;
-        line-height: 1.8em;
+        font-size: 16px;
+        line-height: 28px;
         width: 475px;
         margin: auto;
     }
@@ -478,12 +478,12 @@ _________________________________
         padding: 15px 0 10px 0;
     }
     .seccionwrap h2{
-        font-size: 1.5em;
+        font-size: 24px;
     }
     .seccionwrap p{
-        line-height: 2em;
+        line-height: 32px;
         padding: 5px 25px;
-        font-size: 1.1em;
+        font-size: 17px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -512,12 +512,7 @@ _________________________________
     .textoarticle{
         margin-bottom: 15px;
     }
-    .textoarticle h2{
-        font-size: 2.8em;
-    }
     .textoarticle p{
-        font-size: 1em;
-        line-height: 1.8em;
         width: 400px;
         margin: auto;
     }
@@ -528,27 +523,19 @@ _________________________________
         font-size: 75px;
         padding: 15px 0 10px 0;
     }
-    .seccionwrap h2{
-        font-size: 1.5em;
-    }
-    .seccionwrap p{
-        line-height: 2em;
-        padding: 5px 25px;
-        font-size: 1.1em;
-    }
     .ux-class .ux-class_animate h2{
-        font-size: 2em;
+        font-size: 32px;
         margin-bottom: 15px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1em;
+        font-size: 16px;
         width: 400px;
         margin-bottom: 10px;
     }
     .ux-class .ux-class_animate button{
         padding: 10px 50px;
         margin: 0;
-        font-size: 1em;
+        font-size: 16px;
     }
     .ux-class .ux-class_animate button:hover{
         padding: 10px 50px;
@@ -584,28 +571,21 @@ _________________________________
         font-size: 75px;
         padding: 15px 0 10px 0;
     }
-    .seccionwrap h2{
-        font-size: 1.5em;
-    }
     .seccionwrap p{
-        line-height: 2em;
         padding: 5px 0;
-        font-size: 1.1em;
         text-align: justify;
     }
     .ux-class .ux-class_animate h2{
-        font-size: 2em;
+        font-size: 32px;
         margin-bottom: 15px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1em;
         width: 350px;
         margin-bottom: 10px;
     }
     .ux-class .ux-class_animate button{
         padding: 10px 50px;
         margin: 0;
-        font-size: 1em;
     }
     .ux-class .ux-class_animate button:hover{
         padding: 10px 50px;
@@ -614,12 +594,12 @@ _________________________________
 }
 @media only screen and (max-width: 400px) {
     .home .caption h1{
-	    font-size: 2em;
+	    font-size: 32px;
         padding: 0;
         margin: 0;
     }
     .home .caption p{
-	    font-size: 1em;
+	    font-size: 16px;
         padding: 0;
         margin: 25px 0 0 0;
     }
@@ -631,12 +611,12 @@ _________________________________
         top: 25px;
     }
     .textoarticle h2{
-        font-size: 2em;
+        font-size: 32px;
     }
     .textoarticle p{
         width: 300px;
         padding: 15px 15px 0 15px;
-        line-height: 2em;
+        line-height: 32px;
     }
     .seccionwrap{
         width: 90%;
@@ -646,25 +626,25 @@ _________________________________
         padding: 15px 0 10px 0;
     }
     .seccionwrap h2{
-        font-size: 1.1em;
+        font-size: 17px;
     }
     .seccionwrap p{
         padding: 5px 0;
-        font-size: 1em;
+        font-size: 16px;
         text-align: justify;
     }
     .ux-class .ux-class_animate h2{
-        font-size: 1.8em;
+        font-size: 28px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1em;
+        font-size: 16px;
         width: 300px;
         margin-bottom: 15px;
     }
     .ux-class .ux-class_animate button{
         padding: 10px 50px;
         margin: 0;
-        font-size: 1em;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -672,10 +652,10 @@ _________________________________
         height: 600px;
     }
     .home .caption h1{
-	    font-size: 1.3em;
+	    font-size: 20px;
     }
     .home .caption p{
-	    font-size: 1em;
+	    font-size: 16px;
         margin: 15px 0 0 0;
     }
     .home .captionright img{
@@ -700,10 +680,10 @@ _________________________________
         font-size: 50px;
     }
     .ux-class .ux-class_animate h2{
-        font-size: 1.2em;
+        font-size: 19px;
     }
     .ux-class .ux-class_animate p{
-        font-size: 1em;
+        font-size: 16px;
         width: 220px;
         margin-bottom: 15px;
     }

@@ -23,23 +23,23 @@ ___________________________________
 }
 .caracteristicas h1{
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
   color: #fff;
-  line-height: 1.3em;
+  line-height: 62px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 .caracteristicas h2{
   color: #fff;
-  font-size: 2.5em;
-  line-height: 1.5em;
+  font-size: 40px;
+  line-height: 61px;
   margin-bottom: 15px;
 }
 .caracteristicas p{
   color: #fff;
-  font-size: 1.1em;
+  font-size: 17.6px;
   font-weight: 100;
-  line-height: 2em;
+  line-height: 35px;
 }
 .c-seccion1{
   display: flex;
@@ -77,15 +77,15 @@ _________________________________
   margin-bottom: 50px;
 }
 .textoarticle h2{
-  font-size: 3em;
+  font-size: 48px;
   color: #576975;
-  line-height: 1.5em;
+  line-height: 72px;
   font-weight: 700;
 }
 .textoarticle p{
-  font-size: 1.5em;
+  font-size: 24px;
   color: #82919a;
-  line-height: 1.5em;
+  line-height: 35px;
 }
 .fwrap{
   flex-wrap: wrap;
@@ -118,7 +118,7 @@ _________________________________
 }
 .seccionwrap p{
   color: #82919a;
-  line-height: 2em;
+  line-height: 32px;
   padding: 10px;
 }
 /*_________________________________
@@ -136,9 +136,9 @@ ___________________________________
 }
 .preciosWeb h2{
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
   color: #576975;
-  line-height: 1.5em;
+  line-height: 62px;
   font-weight: 700;
 }
 .page-wrapper {
@@ -367,7 +367,7 @@ ___________________________________
 .cart .add-to-cart .txt {
   font-size: 14px;
   color: #fff;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.72px;
   text-transform: uppercase;
   white-space: nowrap;
   transition: all 300ms ease;
@@ -385,8 +385,8 @@ _________________________________
     padding: 75px 35px 0 35px;
   }
   .caracteristicas h2{
-    font-size: 2em;
-    line-height: 1.3em;
+    font-size: 32px;
+    line-height: 52px;
   }
   .caracteristicas .c-s-t, .caracteristicas .c-s-i{
     padding: 25px 35px;
@@ -404,14 +404,14 @@ _________________________________
     margin-bottom: 30px;
   }
   .textoarticle h2{
-    font-size: 3em;
+    font-size: 48px;
     color: #576975;
-    line-height: 1.5em;
+    line-height: 65px;
     font-weight: 700;
   }
   .textoarticle p{
-    font-size: 1.3em;
-    line-height: 2em;
+    font-size: 20.8px;
+    line-height: 35px;
   }
   .seccionwrap{
     padding: 25px 30px;
@@ -421,20 +421,20 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.3em;
+    font-size: 20.8px;
   }
   .seccionwrap p{
-    line-height: 2em;
+    line-height: 32px;
     padding: 10px 0;
   }
 }
 @media only screen and (max-width: 970px) {
   .caracteristicas h1{
-    font-size: 2.3em;
+    font-size: 36.8px;
   }
   .caracteristicas h2{
-    font-size: 2em;
-    line-height: 1.3em;
+    font-size: 32px;
+    line-height: 45px;
   }
   .caracteristicas p{
     padding: 0 18px;
@@ -461,11 +461,11 @@ _________________________________
     margin-bottom: 15px;
   }
   .textoarticle h2{
-    font-size: 2.8em;
+    font-size: 44.8px;
   }
   .textoarticle p{
-    font-size: 1em;
-    line-height: 2em;
+    font-size: 16px;
+    line-height: 32px;
   }
   .seccionwrap{
     width: 45%;
@@ -475,10 +475,10 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.3em;
+    font-size: 20.8px;
   }
   .seccionwrap p{
-    line-height: 2em;
+    line-height: 32px;
     padding: 5px 0;
   }
 }
@@ -494,11 +494,11 @@ _________________________________
     margin-bottom: 15px;
   }
   .textoarticle h2{
-    font-size: 2.8em;
+    font-size: 44.8px;
   }
   .textoarticle p{
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 28.8px;
     width: 475px;
     margin: auto;
   }
@@ -510,25 +510,25 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.5em;
+    font-size: 24px;
   }
   .seccionwrap p{
-    line-height: 2em;
+    line-height: 32px;
     padding: 5px 25px;
-    font-size: 1.1em;
+    font-size: 17.6px;
   }
 }
 @media only screen and (max-width: 600px) {
   .caracteristicas h1{
-    font-size: 2em;
+    font-size: 32px;
   }
   .caracteristicas h2{
-    font-size: 1.5em;
+    font-size: 24px;
   }
   .caracteristicas p{
     padding: 0 18px;
-    line-height: 1.5em;
-    font-size: 1em;
+    line-height: 32px;
+    font-size: 16px;
   }
   .c-s-i img{
     width: 380px;
@@ -537,11 +537,11 @@ _________________________________
     margin-bottom: 15px;
   }
   .textoarticle h2{
-    font-size: 2.8em;
+    font-size: 44.8px;
   }
   .textoarticle p{
-    font-size: 1em;
-    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 32px;
     width: 400px;
     margin: auto;
   }
@@ -553,15 +553,15 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.5em;
+    font-size: 24px;
   }
   .seccionwrap p{
-    line-height: 2em;
+    line-height: 32px;
     padding: 5px 25px;
-    font-size: 1.1em;
+    font-size: 17.6px;
   }
   .preciosWeb h2{
-    font-size: 2em;
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -569,10 +569,10 @@ _________________________________
     padding: 75px 25px 0 25px;
   }
   .caracteristicas h1{
-    font-size: 1.6em;
+    font-size: 25.6px;
   }
   .caracteristicas h2{
-    font-size: 1.2em;
+    font-size: 19.2px;
     margin-bottom: 5px;
   }
   .caracteristicas p{
@@ -594,16 +594,16 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.5em;
+    font-size: 24px;
   }
   .seccionwrap p{
-    line-height: 2em;
+    line-height: 32px;
     padding: 5px 0;
-    font-size: 1.1em;
+    font-size: 17.6px;
     text-align: justify;
   }
   .preciosWeb h2{
-    font-size: 1.6em;
+    font-size: 25.6px;
   }
   .preciosWeb{
     padding: 75px 15px 50px 15px;
@@ -620,12 +620,12 @@ _________________________________
     width: 220px;
   }
   .textoarticle h2{
-    font-size: 2em;
+    font-size: 32px;
   }
   .textoarticle p{
     width: 300px;
     padding: 15px 15px 0 15px;
-    line-height: 2em;
+    line-height: 32px;
   }
   .seccionwrap{
     width: 90%;
@@ -635,11 +635,11 @@ _________________________________
     padding: 15px 0 10px 0;
   }
   .seccionwrap h2{
-    font-size: 1.1em;
+    font-size: 17.6px;
   }
   .seccionwrap p{
     padding: 5px 0;
-    font-size: 1em;
+    font-size: 16px;
     text-align: justify;
   }
   .el-wrapper {
@@ -648,7 +648,7 @@ _________________________________
 }
 @media only screen and (max-width: 320px) {
   .caracteristicas h1{
-    font-size: 1.2em;
+    font-size: 19.2px;
   }
   .caracteristicas .c-s-t, .caracteristicas .c-s-i{
     padding: 5px;

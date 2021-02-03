@@ -11,9 +11,9 @@
 	text-align: center;
 }
 .headerNP .logoNP h2{
-	font-size: 3em;
+	font-size: 48px;
     color: #576975;
-    line-height: 1.5em;
+    line-height: 72px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -35,9 +35,9 @@
 	border: none;
 }
 .headerNP .categoriasNP button p{
-	font-size: 1em;
+	font-size: 16px;
     color: #82919a;
-    line-height: 1.3em;
+    line-height: 20.8px;
 }
 .headerNP .categoriasNP button:hover{
     color: orange;
@@ -132,7 +132,7 @@ div.categoriasNP button.active{
 }
 @media only screen and (max-width: 600px){
     .headerNP .logoNP h2{
-	font-size: 2.8em;
+	font-size: 44.8px;
     }
     .gridNP{
         margin: auto;
@@ -147,7 +147,7 @@ div.categoriasNP button.active{
 	display: none;
     }
     .headerNP .logoNP h2{
-	font-size: 2em;
+	font-size: 32px;
     }
 }
 @media only screen and (max-width: 320px){
@@ -158,7 +158,7 @@ div.categoriasNP button.active{
     display: none;
     }
     .headerNP .logoNP h2{
-	font-size: 1.6em;
+	font-size: 25.6px;
     }
 }
 @media only screen and (max-height: 520px) and (orientation: landscape){

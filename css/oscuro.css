@@ -9,7 +9,7 @@ _________________________________
 .oscuro .seccionwrap{
     background-color: #34495E;
 }
-.oscuro .contenedorNP, .oscuro .gridNP{
+.oscuro .contenedorNP, .oscuro .gridNP, .oscuro .catalogo{
     background-color: #243445;
 }
 .oscuro .seccionwrap:hover{
@@ -23,4 +23,26 @@ _________________________________
 }
 .oscuro .overlay{
     background: rgba(0,0,0,0.9);
+}
+.oscuro #s3{
+    background-color: #10527b;
+}
+.oscuro .home .enlaces #e3{
+    color: #10527b;
+}
+.oscuro .catalogo .swiper-slide h3{
+    color: #fcfcfc;
+}
+.oscuro .catalogo a:hover{
+    color: #fff;
+    border-color: #fff;
+}
+.oscuro .catalogo .btn-descarga{
+    border-color: #fff;
+    background-color: #fff;
+    color: #243445;
+}
+.oscuro .catalogo .btn-descarga:hover{
+    background-color: #ff8000;
+    border-color: #ff8000;
 }
